@@ -10,6 +10,18 @@ import time
 # take the first four characters from the resource name, which is usually a year if it's a multi-year dataset.
 
 def get_resource_ids(datapackage_id: str, max_retries=3, file_slug='') -> list:
+    '''
+    This function gets the list of data resources from a particular BCN Open Data package.
+    It returns the resources as a list of tuples where [0] is a 4-character slug (usually the year)
+    and [1] is the resource ID. It also saves the list of resources to a CSV file for later use.
+    :param datapackage_id: a string, you can usually get this from the URL of a BCN Open Data package
+    page
+    :param max_retries: limits how frequently we hit the API, so we don't send too many requests
+    :param file_slug: slug for resource names; if blank, grabs the first 4 characters from the 'name' field in
+    the JSON response.
+    :return: a list of tuples
+    '''
+
     url = 'https://opendata-ajuntament.barcelona.cat/data/api/action/package_show'
 
     for attempt in range(1, max_retries + 1):
@@ -25,10 +37,15 @@ def get_resource_ids(datapackage_id: str, max_retries=3, file_slug='') -> list:
                     if file_slug:
                         tag = file_slug
                     else:
-                        tag = int(res['name'][0:4])
+                        tag = res['name'][0:4]
                     id_list.append((tag, res['id']))
             list_length = len(id_list)
             print(f'Successfully retrieved {list_length} resource IDs in {response.elapsed.total_seconds()} seconds.')
+            file_name = f'{datapackage_id}.csv'
+            with open(file_name, 'w') as file:
+                writer = csv.writer(file)
+                for item in id_list:
+                    writer.writerow(list(item))
             return id_list
         else:
             print(f'Attempt failed with {response.status_code} code in {response.elapsed.total_seconds()} seconds.')
@@ -86,10 +103,10 @@ def get_data(api_endpoint, resource_id: tuple, max_retries=3, backoff_factor=2) 
     print('Max retries reached. Giving up.')
     return {}
 
-def save_to_csv(data: dict, directory: str, resource_tuple: tuple):
+def save_to_csv(data: dict, directory: str, resource_tuple: tuple, slug: str):
     if data and 'result' in data and 'records' in data['result']:
         count = 0
-        with open(f'{directory}names_{resource_tuple[0]}.csv', 'w') as file:
+        with open(f'{directory}{slug}_{resource_tuple[0]}.csv', 'w') as file:
             fieldnames = list(data['result']['records'][0].keys())
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
