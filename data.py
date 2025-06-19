@@ -1,11 +1,12 @@
 from io import StringIO
+from typing import Tuple
 import logging, requests, os
 import pandas as pd
 
 def get_resource_library(
         logger: logging.Logger, 
         package_name: str
-        ) -> list:
+        ) -> Tuple[list, int]:
     """
     Gets the resource library for a particular package from Open Data BCN.
 
@@ -14,14 +15,29 @@ def get_resource_library(
         package_name (str): Name of an Open Data BCN package containing multiple resources.
 
     Returns:
-        resources (list): A list of resource dictionaries   
+        [0] A list of resource dictionaries
+        [1] The time in seconds it took for the response
     """
 
     url = 'https://opendata-ajuntament.barcelona.cat/data/api/action/package_show'
 
     #TODO: add logging
     #TODO: add error handling 
-    response = requests.get(url, params={'id': package_name})
+    
+    logger.info("-------------------------------------------")
+    logger.info(f"Making GET request for list of resources in the {package_name} data package...")
+
+    try:
+        response = requests.get(url, params={'id': package_name})
+    except Exception as e:
+        logger.exception(e)
+        logger.info("-------------------------------------------")
+        return []
+
+    logger.info(f'Response code: {response.status_code}')
+    logger.info(f'Seconds to response: {response.elapsed.seconds}')
+    logger.info(f'Processing response...')
+
     data = response.json()
     resources = data['result']['resources']
     csv_resources = []
@@ -30,9 +46,13 @@ def get_resource_library(
             #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
             res['package_name'] = package_name
             csv_resources.append(res)
-    return csv_resources
 
-def download(logger: logging.Logger, resource: dict) -> StringIO:
+    logger.info(f'Successfully collected details on {len(csv_resources)} resources belonging to the {package_name} data package!')
+    logger.info("-------------------------------------------")
+    return csv_resources, response.elapsed.seconds
+
+
+def download(logger: logging.Logger, resource: dict) -> Tuple[StringIO, int]:
 
     """
     Downloads and returns a CSV file object from the Open Data BCN respository.
@@ -42,16 +62,45 @@ def download(logger: logging.Logger, resource: dict) -> StringIO:
         resource (dict): A dictionary with information about the resource.
 
     Returns:
-        In-memory StringIO object of a CSV file. 
+        [0] In-memory StringIO object of a CSV file.
+        [1] The time in seconds it took for the response.
     """
 
     #TODO: add a check to make sure the 'url' resource exists.
     #TODO: add error handling and logging
+    if not resource.get('url') or not resource['url']:
+        logger.error(f'Sorry, this resource has no download URL available!')
+        return
+    
     url = resource['url']
-    response = requests.get(url)
-    csv_data = StringIO(response.content.decode('utf-8'))
-    return csv_data
 
+    logger.info("-------------------------------------------")
+    logger.info(f"Downloading file...")
+
+    try:
+        response = requests.get(url)
+
+        logger.info(f'Response code: {response.status_code}')
+        logger.info(f'Seconds to response: {response.elapsed.seconds}')
+        logger.info(f'Processing response...')
+
+        try:
+            csv_data = StringIO(response.content.decode('utf-8'))
+
+            logger.info(f"Successfully downloaded the CSV file!")
+            logger.info("-------------------------------------------")
+            return csv_data, response.elapsed.seconds
+        
+        except Exception as e:
+            logger.exception(f"There was an error while converting the response into a CSV: {e}")
+            logger.info("-------------------------------------------")
+            return
+    
+    except Exception as e:
+        logger.exception(f"There was a problem downloading the CSV file: {e}")
+        logger.info("-------------------------------------------")
+        return
+    
 def save_csv(logger: logging.Logger, 
              resource: dict, 
              csv: StringIO, 
@@ -70,23 +119,33 @@ def save_csv(logger: logging.Logger,
         A boolean operator indicating if the operation was successful or not.
     """
     csv.seek(0)
-    #TODO: add logging
+    
+    logger.info("-------------------------------------------")
+    logger.info("Saving CSV to disk...")
+
     final_path = os.path.join(
         path, 
         resource['package_name'], 
         resource['name']
         )
     
-    #TODO: add try/except here to catch if user does not have permissions
-    os.makedirs(os.path.dirname(final_path), exist_ok=True)
-
+    try:
+        os.makedirs(os.path.dirname(final_path), exist_ok=True)
+    except PermissionError as e:
+        logger.error(f"Sorry, you don't have permission to save the file to {final_path}: {e}")
+        return False
+    
     try:
         with open(final_path, 'w', encoding='utf-8') as f:
             f.write(csv.getvalue())
+        logger.info(f"Succesfully saved CSV file to {final_path}!")
+        logger.info("-------------------------------------------")
         return True
     except Exception as e:
-        print("There was a problem saving the file: {e}") #change this to a logger call
+        logger.error("There was a problem saving the file: {e}")
+        logger.info("-------------------------------------------")
         return False
+
 
 def to_df(logger: logging.Logger, resource: dict, csv: StringIO) -> pd.DataFrame:
 
@@ -99,6 +158,17 @@ def to_df(logger: logging.Logger, resource: dict, csv: StringIO) -> pd.DataFrame
         csv (StringIO): A StringIO object that is a CSV file in memory.
     """
     
-    #TODO: add logging
     csv.seek(0)
-    return pd.read_csv(csv)
+    
+    logger.info("-------------------------------------------")
+    logger.info(f"Converting to a dataframe...")
+    
+    try:
+        df = pd.read_csv(csv)
+        logger.info("Successfully converted CSV to a dataframe!")
+        logger.info("-------------------------------------------")
+        return df
+    except Exception as e:
+        logger.exception(f"Something went wrong: {e}")
+        logger.info("-------------------------------------------")
+        return
