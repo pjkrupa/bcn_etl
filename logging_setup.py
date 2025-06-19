@@ -3,9 +3,10 @@ import logging
 def get_logger(
         name='__name__', 
         path='etl.log', 
-        level='INFO'
+        level=logging.INFO,
         ):
-    logger = logging.getLogger(__name__).setLevel(level)
+    logger = logging.getLogger(__name__)
+    logger.setLevel(level)
 
     file_handler = logging.FileHandler(
         filename="etl.log",
@@ -20,7 +21,7 @@ def get_logger(
     formatter = logging.Formatter( 
         "{asctime} - {levelname} - {message}", 
         style="{",
-        datefmt="%Y-%m-%d %H:%M",
+        datefmt="%H:%M:%S",
     )
 
     console_handler.setFormatter(formatter)

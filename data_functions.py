@@ -1,12 +1,13 @@
 from io import StringIO
 from typing import Tuple
-import logging, requests, os
+import logging, requests, os, csv
 import pandas as pd
 
+#TODO: break this up into two functions, one that returns the request and another that returns the processed library.
 def get_resource_library(
         logger: logging.Logger, 
         package_name: str
-        ) -> Tuple[list, int]:
+        ) -> Tuple[list, requests.Response]:
     """
     Gets the resource library for a particular package from Open Data BCN.
 
@@ -16,12 +17,11 @@ def get_resource_library(
 
     Returns:
         [0] A list of resource dictionaries
-        [1] The time in seconds it took for the response
+        [1] The requests.Response object with all the info from the response
     """
 
     url = 'https://opendata-ajuntament.barcelona.cat/data/api/action/package_show'
 
-    #TODO: add logging
     #TODO: add error handling 
     
     logger.info("-------------------------------------------")
@@ -31,43 +31,45 @@ def get_resource_library(
         response = requests.get(url, params={'id': package_name})
     except Exception as e:
         logger.exception(e)
-        logger.info("-------------------------------------------")
-        return []
+        return None
 
     logger.info(f'Response code: {response.status_code}')
     logger.info(f'Seconds to response: {response.elapsed.seconds}')
-    logger.info(f'Processing response...')
 
-    data = response.json()
-    resources = data['result']['resources']
-    csv_resources = []
-    for res in resources:
-        if res['name'].lower().endswith('.csv'):
-            #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
-            res['package_name'] = package_name
-            csv_resources.append(res)
+    if response.status_code == 200:
+        logger.info(f'Processing response...')
 
-    logger.info(f'Successfully collected details on {len(csv_resources)} resources belonging to the {package_name} data package!')
-    logger.info("-------------------------------------------")
-    return csv_resources, response.elapsed.seconds
+        data = response.json()
+        resources = data['result']['resources']
+        csv_resources = []
+        for res in resources:
+            if res['name'].lower().endswith('.csv'):
+                #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
+                res['package_name'] = package_name
+                csv_resources.append(res)
+
+        logger.info(f'Successfully collected details on resources belonging to the {package_name} data package.')
+        return csv_resources, response
+    else:
+        logger.error(f"Sorry, I couldn't retrieve the resources for the {package_name} package, got error code {response.status_code}.")
+        return None, response
 
 
-def download(logger: logging.Logger, resource: dict) -> Tuple[StringIO, int]:
+#TODO: add a check for whether a resource requires a token
+def download(logger: logging.Logger, resource: dict) -> requests.Response:
 
     """
-    Downloads and returns a CSV file object from the Open Data BCN respository.
+    Downloads a resource from the Open Data BCN respository as a requests.Response object.
 
     Args:
         logger (logging.Logger): A logging instance for recording events.
         resource (dict): A dictionary with information about the resource.
 
     Returns:
-        [0] In-memory StringIO object of a CSV file.
-        [1] The time in seconds it took for the response.
+        A requests.Response object where ".content" is the data for the CSV file.
     """
 
-    #TODO: add a check to make sure the 'url' resource exists.
-    #TODO: add error handling and logging
+
     if not resource.get('url') or not resource['url']:
         logger.error(f'Sorry, this resource has no download URL available!')
         return
@@ -82,23 +84,50 @@ def download(logger: logging.Logger, resource: dict) -> Tuple[StringIO, int]:
 
         logger.info(f'Response code: {response.status_code}')
         logger.info(f'Seconds to response: {response.elapsed.seconds}')
-        logger.info(f'Processing response...')
-
-        try:
-            csv_data = StringIO(response.content.decode('utf-8'))
-
-            logger.info(f"Successfully downloaded the CSV file!")
-            logger.info("-------------------------------------------")
-            return csv_data, response.elapsed.seconds
-        
-        except Exception as e:
-            logger.exception(f"There was an error while converting the response into a CSV: {e}")
-            logger.info("-------------------------------------------")
-            return
     
     except Exception as e:
         logger.exception(f"There was a problem downloading the CSV file: {e}")
-        logger.info("-------------------------------------------")
+        return None
+    
+    if response.status_code == 200:
+        logger.info(f'Success! Resource retrieved.')
+        return response
+    else:
+        logger.error(f'Sorry, I got a {response.status_code} error and was not able to download this one.')
+        return None
+    
+    
+def convert_to_csv(
+        logger: logging.Logger,  
+        response: requests.Response
+        ) -> StringIO:
+    """
+    Converts a response.Requests object to a CSV StringIO object.
+    """
+    try:
+        csv_data = StringIO(response.content.decode('utf-8'))
+        reader = csv.reader(csv_data)
+
+        #simple check to see if the file is actually a CSV. if not, it throws an error.
+        first_row = next(reader)
+        
+        logger.info(f"Successfully converted response object to a CSV file.")
+        return csv_data
+    
+    except UnicodeDecodeError as e:
+        logger.exception(f"Failed to decode response content as UTF-8: {e}")
+        return None 
+
+    except csv.Error as e:
+        logger.excption(f"Response content is not valid CSV format: {e}")
+        return None
+    
+    except StopIteration:
+        logger.warning("CSV appears to be empty.")
+        return None
+
+    except Exception as e:
+        logger.exception(f"There was an error while converting the response into a CSV: {e}")
         return
     
 def save_csv(logger: logging.Logger, 
@@ -120,30 +149,29 @@ def save_csv(logger: logging.Logger,
     """
     csv.seek(0)
     
-    logger.info("-------------------------------------------")
     logger.info("Saving CSV to disk...")
 
-    final_path = os.path.join(
+    dir_path = os.path.join(
         path, 
-        resource['package_name'], 
-        resource['name']
+        resource['package_name'],
         )
     
     try:
-        os.makedirs(os.path.dirname(final_path), exist_ok=True)
+        os.makedirs(dir_path, exist_ok=True)
     except PermissionError as e:
-        logger.error(f"Sorry, you don't have permission to save the file to {final_path}: {e}")
+        logger.error(f"Sorry, you don't have permission to create the directory {dir_path}: {e}")
         return False
     
+    final_path = os.path.join(dir_path, resource['name'])
+
     try:
         with open(final_path, 'w', encoding='utf-8') as f:
             f.write(csv.getvalue())
-        logger.info(f"Succesfully saved CSV file to {final_path}!")
-        logger.info("-------------------------------------------")
+        logger.info(f"Succesfully saved CSV file to {final_path}.")
         return True
+    
     except Exception as e:
-        logger.error("There was a problem saving the file: {e}")
-        logger.info("-------------------------------------------")
+        logger.error(f"There was a problem saving the file: {e}")
         return False
 
 

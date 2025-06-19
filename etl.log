@@ -1,1 +1,544 @@
-2025-06-19 15:21 - WARNING - watch out!!
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Making GET request for list of resources in the pad_dom_mdbas_tipus-domicili_edat data package...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Processing response...
+2025-06-19 18:17 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_tipus-domicili_edat data package.
+2025-06-19 18:17 - INFO - Finished getting resource list, this package contains a total of 29 resources.
+2025-06-19 18:17 - INFO - ////////////////////////////////////////////////////////
+2025-06-19 18:17 - INFO - Downloading resources...
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2025_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 1 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2024_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 2 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2023_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 3 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2022_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 4 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2021_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 5 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2020_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 6 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2019_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 7 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2018_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 8 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2017_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 9 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2016_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 10 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2015_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 11 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2014_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 12 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2013_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 13 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2012_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 14 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:17 - INFO - Response code: 200
+2025-06-19 18:17 - INFO - Seconds to response: 0
+2025-06-19 18:17 - INFO - Success! Resource retrieved.
+2025-06-19 18:17 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:17 - INFO - Saving CSV to disk...
+2025-06-19 18:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2011_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:17 - INFO - 15 of 29 resources collected.
+2025-06-19 18:17 - INFO - -------------------------------------------
+2025-06-19 18:17 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2010_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 16 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2009_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 17 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2008_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 18 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2007_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 19 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2006_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 20 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2005_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 21 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2004_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 22 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2003_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 23 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2002_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 24 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2001_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 25 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2000_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 26 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1999_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 27 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1998_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 28 of 29 resources collected.
+2025-06-19 18:18 - INFO - -------------------------------------------
+2025-06-19 18:18 - INFO - Downloading file...
+2025-06-19 18:18 - INFO - Response code: 200
+2025-06-19 18:18 - INFO - Seconds to response: 0
+2025-06-19 18:18 - INFO - Success! Resource retrieved.
+2025-06-19 18:18 - INFO - Successfully converted response object to a CSV file.
+2025-06-19 18:18 - INFO - Saving CSV to disk...
+2025-06-19 18:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1997_pad_dom_mdbas_tipus-domicili_edat.csv.
+2025-06-19 18:18 - INFO - 29 of 29 resources collected.
+2025-06-19 18:18 - INFO - All done with pad_dom_mdbas_tipus-domicili_edat!
+2025-06-19 18:18 - INFO - ////////////////////////////////////////////////////////
+18:24:04 - INFO - -------------------------------------------
+18:24:04 - INFO - Making GET request for list of resources in the pad_dom_mdbas_tipus-domicili_edat data package...
+18:24:04 - INFO - Response code: 200
+18:24:04 - INFO - Seconds to response: 0
+18:24:04 - INFO - Processing response...
+18:24:04 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_tipus-domicili_edat data package.
+18:24:04 - INFO - Finished getting resource list, this package contains a total of 29 resources.
+18:24:04 - INFO - ////////////////////////////////////////////////////////
+18:24:04 - INFO - Downloading resources...
+18:24:04 - INFO - -------------------------------------------
+18:24:04 - INFO - Downloading file...
+18:24:05 - INFO - Response code: 200
+18:24:05 - INFO - Seconds to response: 0
+18:24:05 - INFO - Success! Resource retrieved.
+18:24:05 - INFO - Successfully converted response object to a CSV file.
+18:24:05 - INFO - Saving CSV to disk...
+18:24:05 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2025_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:05 - INFO - 1 of 29 resources collected.
+18:24:05 - INFO - -------------------------------------------
+18:24:05 - INFO - Downloading file...
+18:24:06 - INFO - Response code: 200
+18:24:06 - INFO - Seconds to response: 0
+18:24:06 - INFO - Success! Resource retrieved.
+18:24:06 - INFO - Successfully converted response object to a CSV file.
+18:24:06 - INFO - Saving CSV to disk...
+18:24:06 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2024_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:06 - INFO - 2 of 29 resources collected.
+18:24:06 - INFO - -------------------------------------------
+18:24:06 - INFO - Downloading file...
+18:24:07 - INFO - Response code: 200
+18:24:07 - INFO - Seconds to response: 0
+18:24:07 - INFO - Success! Resource retrieved.
+18:24:07 - INFO - Successfully converted response object to a CSV file.
+18:24:07 - INFO - Saving CSV to disk...
+18:24:07 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2023_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:07 - INFO - 3 of 29 resources collected.
+18:24:07 - INFO - -------------------------------------------
+18:24:07 - INFO - Downloading file...
+18:24:08 - INFO - Response code: 200
+18:24:08 - INFO - Seconds to response: 0
+18:24:08 - INFO - Success! Resource retrieved.
+18:24:08 - INFO - Successfully converted response object to a CSV file.
+18:24:08 - INFO - Saving CSV to disk...
+18:24:08 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2022_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:08 - INFO - 4 of 29 resources collected.
+18:24:08 - INFO - -------------------------------------------
+18:24:08 - INFO - Downloading file...
+18:24:09 - INFO - Response code: 200
+18:24:09 - INFO - Seconds to response: 0
+18:24:09 - INFO - Success! Resource retrieved.
+18:24:09 - INFO - Successfully converted response object to a CSV file.
+18:24:09 - INFO - Saving CSV to disk...
+18:24:09 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2021_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:09 - INFO - 5 of 29 resources collected.
+18:24:09 - INFO - -------------------------------------------
+18:24:09 - INFO - Downloading file...
+18:24:10 - INFO - Response code: 200
+18:24:10 - INFO - Seconds to response: 0
+18:24:10 - INFO - Success! Resource retrieved.
+18:24:10 - INFO - Successfully converted response object to a CSV file.
+18:24:10 - INFO - Saving CSV to disk...
+18:24:10 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2020_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:10 - INFO - 6 of 29 resources collected.
+18:24:10 - INFO - -------------------------------------------
+18:24:10 - INFO - Downloading file...
+18:24:11 - INFO - Response code: 200
+18:24:11 - INFO - Seconds to response: 0
+18:24:11 - INFO - Success! Resource retrieved.
+18:24:11 - INFO - Successfully converted response object to a CSV file.
+18:24:11 - INFO - Saving CSV to disk...
+18:24:11 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2019_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:11 - INFO - 7 of 29 resources collected.
+18:24:11 - INFO - -------------------------------------------
+18:24:11 - INFO - Downloading file...
+18:24:12 - INFO - Response code: 200
+18:24:12 - INFO - Seconds to response: 0
+18:24:12 - INFO - Success! Resource retrieved.
+18:24:12 - INFO - Successfully converted response object to a CSV file.
+18:24:12 - INFO - Saving CSV to disk...
+18:24:12 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2018_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:12 - INFO - 8 of 29 resources collected.
+18:24:12 - INFO - -------------------------------------------
+18:24:12 - INFO - Downloading file...
+18:24:13 - INFO - Response code: 200
+18:24:13 - INFO - Seconds to response: 0
+18:24:13 - INFO - Success! Resource retrieved.
+18:24:13 - INFO - Successfully converted response object to a CSV file.
+18:24:13 - INFO - Saving CSV to disk...
+18:24:13 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2017_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:13 - INFO - 9 of 29 resources collected.
+18:24:13 - INFO - -------------------------------------------
+18:24:13 - INFO - Downloading file...
+18:24:14 - INFO - Response code: 200
+18:24:14 - INFO - Seconds to response: 0
+18:24:14 - INFO - Success! Resource retrieved.
+18:24:14 - INFO - Successfully converted response object to a CSV file.
+18:24:14 - INFO - Saving CSV to disk...
+18:24:14 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2016_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:14 - INFO - 10 of 29 resources collected.
+18:24:14 - INFO - -------------------------------------------
+18:24:14 - INFO - Downloading file...
+18:24:15 - INFO - Response code: 200
+18:24:15 - INFO - Seconds to response: 0
+18:24:15 - INFO - Success! Resource retrieved.
+18:24:15 - INFO - Successfully converted response object to a CSV file.
+18:24:15 - INFO - Saving CSV to disk...
+18:24:15 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2015_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:15 - INFO - 11 of 29 resources collected.
+18:24:15 - INFO - -------------------------------------------
+18:24:15 - INFO - Downloading file...
+18:24:16 - INFO - Response code: 200
+18:24:16 - INFO - Seconds to response: 0
+18:24:16 - INFO - Success! Resource retrieved.
+18:24:16 - INFO - Successfully converted response object to a CSV file.
+18:24:16 - INFO - Saving CSV to disk...
+18:24:16 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2014_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:16 - INFO - 12 of 29 resources collected.
+18:24:16 - INFO - -------------------------------------------
+18:24:16 - INFO - Downloading file...
+18:24:17 - INFO - Response code: 200
+18:24:17 - INFO - Seconds to response: 0
+18:24:17 - INFO - Success! Resource retrieved.
+18:24:17 - INFO - Successfully converted response object to a CSV file.
+18:24:17 - INFO - Saving CSV to disk...
+18:24:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2013_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:17 - INFO - 13 of 29 resources collected.
+18:24:17 - INFO - -------------------------------------------
+18:24:17 - INFO - Downloading file...
+18:24:18 - INFO - Response code: 200
+18:24:18 - INFO - Seconds to response: 0
+18:24:18 - INFO - Success! Resource retrieved.
+18:24:18 - INFO - Successfully converted response object to a CSV file.
+18:24:18 - INFO - Saving CSV to disk...
+18:24:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2012_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:18 - INFO - 14 of 29 resources collected.
+18:24:18 - INFO - -------------------------------------------
+18:24:18 - INFO - Downloading file...
+18:24:19 - INFO - Response code: 200
+18:24:19 - INFO - Seconds to response: 0
+18:24:19 - INFO - Success! Resource retrieved.
+18:24:19 - INFO - Successfully converted response object to a CSV file.
+18:24:19 - INFO - Saving CSV to disk...
+18:24:19 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2011_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:19 - INFO - 15 of 29 resources collected.
+18:24:19 - INFO - -------------------------------------------
+18:24:19 - INFO - Downloading file...
+18:24:20 - INFO - Response code: 200
+18:24:20 - INFO - Seconds to response: 0
+18:24:20 - INFO - Success! Resource retrieved.
+18:24:20 - INFO - Successfully converted response object to a CSV file.
+18:24:20 - INFO - Saving CSV to disk...
+18:24:20 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2010_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:20 - INFO - 16 of 29 resources collected.
+18:24:20 - INFO - -------------------------------------------
+18:24:20 - INFO - Downloading file...
+18:24:21 - INFO - Response code: 200
+18:24:21 - INFO - Seconds to response: 0
+18:24:21 - INFO - Success! Resource retrieved.
+18:24:21 - INFO - Successfully converted response object to a CSV file.
+18:24:21 - INFO - Saving CSV to disk...
+18:24:21 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2009_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:21 - INFO - 17 of 29 resources collected.
+18:24:21 - INFO - -------------------------------------------
+18:24:21 - INFO - Downloading file...
+18:24:22 - INFO - Response code: 200
+18:24:22 - INFO - Seconds to response: 0
+18:24:22 - INFO - Success! Resource retrieved.
+18:24:22 - INFO - Successfully converted response object to a CSV file.
+18:24:22 - INFO - Saving CSV to disk...
+18:24:22 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2008_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:22 - INFO - 18 of 29 resources collected.
+18:24:22 - INFO - -------------------------------------------
+18:24:22 - INFO - Downloading file...
+18:24:23 - INFO - Response code: 200
+18:24:23 - INFO - Seconds to response: 0
+18:24:23 - INFO - Success! Resource retrieved.
+18:24:23 - INFO - Successfully converted response object to a CSV file.
+18:24:23 - INFO - Saving CSV to disk...
+18:24:23 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2007_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:23 - INFO - 19 of 29 resources collected.
+18:24:23 - INFO - -------------------------------------------
+18:24:23 - INFO - Downloading file...
+18:24:24 - INFO - Response code: 200
+18:24:24 - INFO - Seconds to response: 0
+18:24:24 - INFO - Success! Resource retrieved.
+18:24:24 - INFO - Successfully converted response object to a CSV file.
+18:24:24 - INFO - Saving CSV to disk...
+18:24:24 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2006_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:24 - INFO - 20 of 29 resources collected.
+18:24:24 - INFO - -------------------------------------------
+18:24:24 - INFO - Downloading file...
+18:24:25 - INFO - Response code: 200
+18:24:25 - INFO - Seconds to response: 0
+18:24:25 - INFO - Success! Resource retrieved.
+18:24:25 - INFO - Successfully converted response object to a CSV file.
+18:24:25 - INFO - Saving CSV to disk...
+18:24:25 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2005_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:25 - INFO - 21 of 29 resources collected.
+18:24:25 - INFO - -------------------------------------------
+18:24:25 - INFO - Downloading file...
+18:24:26 - INFO - Response code: 200
+18:24:26 - INFO - Seconds to response: 0
+18:24:26 - INFO - Success! Resource retrieved.
+18:24:26 - INFO - Successfully converted response object to a CSV file.
+18:24:26 - INFO - Saving CSV to disk...
+18:24:26 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2004_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:26 - INFO - 22 of 29 resources collected.
+18:24:26 - INFO - -------------------------------------------
+18:24:26 - INFO - Downloading file...
+18:24:27 - INFO - Response code: 200
+18:24:27 - INFO - Seconds to response: 0
+18:24:27 - INFO - Success! Resource retrieved.
+18:24:27 - INFO - Successfully converted response object to a CSV file.
+18:24:27 - INFO - Saving CSV to disk...
+18:24:27 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2003_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:27 - INFO - 23 of 29 resources collected.
+18:24:27 - INFO - -------------------------------------------
+18:24:27 - INFO - Downloading file...
+18:24:28 - INFO - Response code: 200
+18:24:28 - INFO - Seconds to response: 0
+18:24:28 - INFO - Success! Resource retrieved.
+18:24:28 - INFO - Successfully converted response object to a CSV file.
+18:24:28 - INFO - Saving CSV to disk...
+18:24:28 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2002_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:28 - INFO - 24 of 29 resources collected.
+18:24:28 - INFO - -------------------------------------------
+18:24:28 - INFO - Downloading file...
+18:24:29 - INFO - Response code: 200
+18:24:29 - INFO - Seconds to response: 0
+18:24:29 - INFO - Success! Resource retrieved.
+18:24:29 - INFO - Successfully converted response object to a CSV file.
+18:24:29 - INFO - Saving CSV to disk...
+18:24:29 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2001_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:29 - INFO - 25 of 29 resources collected.
+18:24:29 - INFO - -------------------------------------------
+18:24:29 - INFO - Downloading file...
+18:24:30 - INFO - Response code: 200
+18:24:30 - INFO - Seconds to response: 0
+18:24:30 - INFO - Success! Resource retrieved.
+18:24:30 - INFO - Successfully converted response object to a CSV file.
+18:24:30 - INFO - Saving CSV to disk...
+18:24:30 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/2000_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:30 - INFO - 26 of 29 resources collected.
+18:24:30 - INFO - -------------------------------------------
+18:24:30 - INFO - Downloading file...
+18:24:31 - INFO - Response code: 200
+18:24:31 - INFO - Seconds to response: 0
+18:24:31 - INFO - Success! Resource retrieved.
+18:24:31 - INFO - Successfully converted response object to a CSV file.
+18:24:31 - INFO - Saving CSV to disk...
+18:24:31 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1999_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:31 - INFO - 27 of 29 resources collected.
+18:24:31 - INFO - -------------------------------------------
+18:24:31 - INFO - Downloading file...
+18:24:32 - INFO - Response code: 200
+18:24:32 - INFO - Seconds to response: 0
+18:24:32 - INFO - Success! Resource retrieved.
+18:24:32 - INFO - Successfully converted response object to a CSV file.
+18:24:32 - INFO - Saving CSV to disk...
+18:24:32 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1998_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:32 - INFO - 28 of 29 resources collected.
+18:24:32 - INFO - -------------------------------------------
+18:24:32 - INFO - Downloading file...
+18:24:33 - INFO - Response code: 200
+18:24:33 - INFO - Seconds to response: 0
+18:24:33 - INFO - Success! Resource retrieved.
+18:24:33 - INFO - Successfully converted response object to a CSV file.
+18:24:33 - INFO - Saving CSV to disk...
+18:24:33 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_tipus-domicili_edat/1997_pad_dom_mdbas_tipus-domicili_edat.csv.
+18:24:33 - INFO - 29 of 29 resources collected.
+18:24:33 - INFO - All done with pad_dom_mdbas_tipus-domicili_edat. Downloading this package took 28.45 seconds.
+18:24:33 - INFO - ////////////////////////////////////////////////////////
