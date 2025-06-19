@@ -76,6 +76,10 @@ def save_csv(logger: logging.Logger,
         resource['package_name'], 
         resource['name']
         )
+    
+    #TODO: add try/except here to catch if user does not have permissions
+    os.makedirs(os.path.dirname(final_path), exist_ok=True)
+
     try:
         with open(final_path, 'w', encoding='utf-8') as f:
             f.write(csv.getvalue())
@@ -85,7 +89,7 @@ def save_csv(logger: logging.Logger,
         return False
 
 def to_df(logger: logging.Logger, resource: dict, csv: StringIO) -> pd.DataFrame:
-    
+
     """
     Takes an in-memory CSV object and returns a pandas dataframe.
 
