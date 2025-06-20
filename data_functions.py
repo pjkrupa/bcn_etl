@@ -3,59 +3,77 @@ from typing import Tuple
 import logging, requests, os, csv
 import pandas as pd
 
-#TODO: break this up into two functions, one that returns the request and another that returns the processed library.
-def get_resource_library(
+
+def request_resource_library(
         logger: logging.Logger, 
         package_name: str
-        ) -> Tuple[list, requests.Response]:
+        ) -> requests.Response:
     """
-    Gets the resource library for a particular package from Open Data BCN.
+    Requests the resource library for a particular package from Open Data BCN.
 
     Args: 
         logger (logging.Logger): A logging instance for recording events.
         package_name (str): Name of an Open Data BCN package containing multiple resources.
 
     Returns:
-        [0] A list of resource dictionaries
-        [1] The requests.Response object with all the info from the response
+        The requests.Response object with all the info from the response
     """
 
     url = 'https://opendata-ajuntament.barcelona.cat/data/api/action/package_show'
-
-    #TODO: add error handling 
     
-    logger.info("-------------------------------------------")
-    logger.info(f"Making GET request for list of resources in the {package_name} data package...")
-
     try:
         response = requests.get(url, params={'id': package_name})
+        return response
     except Exception as e:
-        logger.exception(e)
-        return None
+        logger.exception("There was a problem: {e}")
+        return response
 
-    logger.info(f'Response code: {response.status_code}')
-    logger.info(f'Seconds to response: {response.elapsed.seconds}')
 
-    if response.status_code == 200:
-        logger.info(f'Processing response...')
+def process_resource_library(
+        logger: logging.Logger, 
+        response: requests.Response
+        ) -> list[dict]:
+    
+    """
+    Processes the request object to extract a package resource library into a list of dictionaries.
 
-        data = response.json()
+    Args:
+        Args: 
+        logger (logging.Logger): A logging instance for recording events.
+        response (requests.Response): A raw response object containing package information.
+    Returns:
+        A list of dictionaries.
+    """
+    data = response.json()
+
+    try:
         resources = data['result']['resources']
-        csv_resources = []
-        for res in resources:
-            if res['name'].lower().endswith('.csv'):
-                #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
-                res['package_name'] = package_name
-                csv_resources.append(res)
+    except Exception as e:
+        logger.exception(f"There was a problem accessing the resources from the request object: {e}")
+        return None
+    csv_resources = []
+    for res in resources:
+        if res['name'].lower().endswith('.csv'):
+            #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
+            res['package_name'] = package_name
+            csv_resources.append(res)
+    return csv_resources
 
-        logger.info(f'Successfully collected details on resources belonging to the {package_name} data package.')
-        return csv_resources, response
+
+def token_required(logger: logging.Logger, resource: dict) -> bool:
+    """
+    Checks to see if resource requires a token for access.
+    
+    Args: 
+        logger (logging.Logger): A logging instance for recording events.
+        resource (dict): A dictionary with information about the resource.
+    Returns: True if the resource requires a token, False if not.
+    """
+    if resource['token_required'].strip().lower() == 'yes':
+        return True
     else:
-        logger.error(f"Sorry, I couldn't retrieve the resources for the {package_name} package, got error code {response.status_code}.")
-        return None, response
+        return False
 
-
-#TODO: add a check for whether a resource requires a token
 def download(logger: logging.Logger, resource: dict) -> requests.Response:
 
     """
@@ -77,7 +95,7 @@ def download(logger: logging.Logger, resource: dict) -> requests.Response:
     url = resource['url']
 
     logger.info("-------------------------------------------")
-    logger.info(f"Downloading file...")
+    logger.info(f"Sending request...")
 
     try:
         response = requests.get(url)
@@ -87,14 +105,14 @@ def download(logger: logging.Logger, resource: dict) -> requests.Response:
     
     except Exception as e:
         logger.exception(f"There was a problem downloading the CSV file: {e}")
-        return None
+        return response
     
     if response.status_code == 200:
         logger.info(f'Success! Resource retrieved.')
         return response
     else:
         logger.error(f'Sorry, I got a {response.status_code} error and was not able to download this one.')
-        return None
+        return response
     
     
 def convert_to_csv(
