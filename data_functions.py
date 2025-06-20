@@ -1,5 +1,5 @@
 from io import StringIO
-from typing import Tuple
+from typing import Optional
 import logging, requests, os, csv
 import pandas as pd
 
@@ -7,7 +7,7 @@ import pandas as pd
 def request_resource_library(
         logger: logging.Logger, 
         package_name: str
-        ) -> requests.Response:
+        ) -> Optional[requests.Response]:
     """
     Requests the resource library for a particular package from Open Data BCN.
 
@@ -22,25 +22,26 @@ def request_resource_library(
     url = 'https://opendata-ajuntament.barcelona.cat/data/api/action/package_show'
     
     try:
-        response = requests.get(url, params={'id': package_name})
+        response = requests.get(url, params={'id': package_name}, timeout=10)
         return response
-    except Exception as e:
-        logger.exception("There was a problem: {e}")
-        return response
+    except requests.RequestException as e:
+        logger.exception(f"There was a problem: {e}")
+        return None
 
 
 def process_resource_library(
         logger: logging.Logger, 
-        response: requests.Response
+        response: requests.Response,
+        package: str,
         ) -> list[dict]:
     
     """
     Processes the request object to extract a package resource library into a list of dictionaries.
 
     Args:
-        Args: 
         logger (logging.Logger): A logging instance for recording events.
         response (requests.Response): A raw response object containing package information.
+        package (str): The name of the package being processed.
     Returns:
         A list of dictionaries.
     """
@@ -55,7 +56,7 @@ def process_resource_library(
     for res in resources:
         if res['name'].lower().endswith('.csv'):
             #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
-            res['package_name'] = package_name
+            res['package_name'] = package
             csv_resources.append(res)
     return csv_resources
 
@@ -74,7 +75,7 @@ def token_required(logger: logging.Logger, resource: dict) -> bool:
     else:
         return False
 
-def download_resource(logger: logging.Logger, resource: dict) -> requests.Response:
+def download_resource(logger: logging.Logger, resource: dict) -> Optional[requests.Response]:
 
     """
     Downloads a resource from the Open Data BCN respository as a requests.Response object.
@@ -88,9 +89,9 @@ def download_resource(logger: logging.Logger, resource: dict) -> requests.Respon
     """
 
 
-    if not resource.get('url') or not resource['url']:
+    if not resource.get('url'):
         logger.error(f'Sorry, this resource has no download URL available!')
-        return
+        return None
     
     url = resource['url']
 
@@ -98,7 +99,7 @@ def download_resource(logger: logging.Logger, resource: dict) -> requests.Respon
         response = requests.get(url, timeout=10)
 
         logger.info(f'Response code: {response.status_code}')
-        logger.info(f'Seconds to response: {response.elapsed.seconds}')
+        logger.info(f'Seconds to response: {response.elapsed.total_seconds():.2f}')
         
         return response
     
@@ -110,7 +111,7 @@ def download_resource(logger: logging.Logger, resource: dict) -> requests.Respon
 def convert_to_csv(
         logger: logging.Logger,  
         response: requests.Response
-        ) -> StringIO:
+        ) -> Optional[StringIO]:
     """
     Converts a response.Requests object to a CSV StringIO object.
     """
