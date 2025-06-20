@@ -74,7 +74,7 @@ def token_required(logger: logging.Logger, resource: dict) -> bool:
     else:
         return False
 
-def download(logger: logging.Logger, resource: dict) -> requests.Response:
+def download_resource(logger: logging.Logger, resource: dict) -> requests.Response:
 
     """
     Downloads a resource from the Open Data BCN respository as a requests.Response object.
@@ -94,25 +94,17 @@ def download(logger: logging.Logger, resource: dict) -> requests.Response:
     
     url = resource['url']
 
-    logger.info("-------------------------------------------")
-    logger.info(f"Sending request...")
-
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
 
         logger.info(f'Response code: {response.status_code}')
         logger.info(f'Seconds to response: {response.elapsed.seconds}')
+        
+        return response
     
-    except Exception as e:
+    except requests.RequestException as e:
         logger.exception(f"There was a problem downloading the CSV file: {e}")
-        return response
-    
-    if response.status_code == 200:
-        logger.info(f'Success! Resource retrieved.')
-        return response
-    else:
-        logger.error(f'Sorry, I got a {response.status_code} error and was not able to download this one.')
-        return response
+        return None
     
     
 def convert_to_csv(
