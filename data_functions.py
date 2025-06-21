@@ -102,15 +102,15 @@ def download_resource(logger: logging.Logger, resource: dict) -> Optional[reques
     url = resource['url']
 
     try:
-        response = requests.get(url, timeout=10)
-
-        logger.info(f'Response code: {response.status_code}')
-        logger.info(f'Seconds to response: {response.elapsed.total_seconds():.2f}')
-        
+        response = requests.get(url, timeout=10)        
         return response
-    
+    except requests.exceptions.ConnectTimeout:
+        logger.error(f"Connection to Open Data BCN timed out while requesting {resource['name']}.")
+    except requests.exceptions.Timeout:
+        logger.error(f"Request to download '{resource['name']}' timed out.")
     except requests.RequestException as e:
-        logger.exception(f"There was a problem downloading the CSV file: {e}")
+        logger.exception(f"There was a problem downloading {resource['name']}: {e.__class__.__name__} - {e}")
+        logger.debug("Full exception details:", exc_info=True)
         return None
     
     
