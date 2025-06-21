@@ -1,17 +1,24 @@
 import time
 from logging_setup import get_logger
+from parser_setup import get_parser
 from data_functions import request_resource_library, process_resource_library, download_resource, convert_to_csv, save_csv, to_df, token_required
 from pipeline_functions import persistant_request
 
 
 #TODO: set up argparse to handle command line parameters
-#TODO: add backoff timer
-#TODO: handle failed downloads in the main loop. check response codes, collect URLs of failed downloads, circle back and try again.
+
 
 logger = get_logger()
-package_list = ["pad-dimensions", "pad_cdo_b_barri-des", "pad_dom_mdbas_dones", "pad_dom_mdbas_edat-0018"]
+parser = get_parser()
+
+#package_list = ["pad-dimensions", "pad_cdo_b_barri-des", "pad_dom_mdbas_dones", "pad_dom_mdbas_edat-0018"]
 
 #"pad_dom_mdbas_tipus-domicili_edat"
+
+args = parser.parse_args()
+package_list = args.packages
+directory = args.directory
+print(package_list)
 
 
 #TODO: Produce a report at the end of the pipeline.
@@ -19,6 +26,7 @@ if __name__ == "__main__":
     
     # Start of the loop collecting information on data packages in the list:
     for package in package_list:
+        package.strip()
         logger.info("-------------------------------------------")
         logger.info(f"Sending GET request for list of resources in the {package} data package...")
         
@@ -77,7 +85,7 @@ if __name__ == "__main__":
                 fail_list.append(resource)
             
             csv = convert_to_csv(logger, response)
-            saved = save_csv(logger, resource, csv)
+            saved = save_csv(logger, resource, csv, path=directory)
 
             if saved:
                 resources_downloaded += 1

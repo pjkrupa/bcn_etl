@@ -24,8 +24,14 @@ def request_resource_library(
     try:
         response = requests.get(url, params={'id': package_name}, timeout=10)
         return response
-    except requests.RequestException as e:
-        logger.exception(f"There was a problem: {e}")
+    
+    except requests.exceptions.ConnectTimeout:
+        logger.error(f"Connection to Open Data BCN timed out while requesting package details for '{package_name}'.")
+    except requests.exceptions.Timeout:
+        logger.error(f"Request for package details for '{package_name}' timed out.")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to fetch package '{package_name}': {e.__class__.__name__} - {e}")
+        logger.debug("Full exception details:", exc_info=True)
         return None
 
 

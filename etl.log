@@ -1234,3 +1234,1149 @@
 19:47:44 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 19:47:44 - INFO - All done with pad_dom_mdbas_edat-0018. Processing all the resources in this package took 28.67 seconds.
 19:47:44 - INFO - ////////////////////////////////////////////////////////
+20:42:18 - INFO - -------------------------------------------
+20:42:18 - INFO - Sending GET request for list of resources in the pad-dimensions data package...
+20:42:18 - INFO - Response code: 200
+20:42:18 - INFO - Seconds to response: 0.28
+20:42:18 - INFO - Successfully collected details on resources belonging to the pad-dimensions data package.
+20:42:18 - INFO - This package contains a total of 1 resources.
+20:42:18 - INFO - Downloading them now...
+20:42:18 - INFO - ////////////////////////////////////////////////////////
+20:42:18 - INFO - Sending a request for pad_dimensions.csv.
+20:42:18 - INFO - Response code: 200
+20:42:18 - INFO - Seconds to response: 0.09
+20:42:18 - INFO - Response code: 200
+20:42:18 - INFO - Seconds to response: 0.09
+20:42:18 - INFO - Successfully converted response object to a CSV file.
+20:42:18 - INFO - Saving CSV to disk...
+20:42:18 - INFO - Succesfully saved CSV file to ./pad-dimensions/pad_dimensions.csv.
+20:42:18 - INFO - 1 of 1 resources collected.
+20:42:18 - INFO - ■
+20:42:18 - INFO - All done with pad-dimensions. Processing all the resources in this package took 0.35 seconds.
+20:42:18 - INFO - ////////////////////////////////////////////////////////
+20:42:18 - INFO - -------------------------------------------
+20:42:18 - INFO - Sending GET request for list of resources in the pad_cdo_b_barri-des data package...
+20:42:20 - INFO - Response code: 200
+20:42:20 - INFO - Seconds to response: 1.78
+20:42:20 - INFO - Successfully collected details on resources belonging to the pad_cdo_b_barri-des data package.
+20:42:20 - INFO - This package contains a total of 28 resources.
+20:42:20 - INFO - Downloading them now...
+20:42:20 - INFO - ////////////////////////////////////////////////////////
+20:42:20 - INFO - Sending a request for 2024_pad_cdo_b_barri-des.csv.
+20:42:20 - INFO - Response code: 200
+20:42:20 - INFO - Seconds to response: 0.09
+20:42:20 - INFO - Response code: 200
+20:42:20 - INFO - Seconds to response: 0.09
+20:42:20 - INFO - Successfully converted response object to a CSV file.
+20:42:20 - INFO - Saving CSV to disk...
+20:42:20 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2024_pad_cdo_b_barri-des.csv.
+20:42:20 - INFO - 1 of 28 resources collected.
+20:42:20 - INFO - ■
+20:42:20 - INFO - Sending a request for 2023_pad_cdo_b_barri-des.csv.
+20:42:21 - INFO - Response code: 200
+20:42:21 - INFO - Seconds to response: 0.09
+20:42:21 - INFO - Response code: 200
+20:42:21 - INFO - Seconds to response: 0.09
+20:42:21 - INFO - Successfully converted response object to a CSV file.
+20:42:21 - INFO - Saving CSV to disk...
+20:42:21 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2023_pad_cdo_b_barri-des.csv.
+20:42:21 - INFO - 2 of 28 resources collected.
+20:42:21 - INFO - ■■
+20:42:21 - INFO - Sending a request for 2022_pad_cdo_b_barri-des.csv.
+20:42:22 - INFO - Response code: 200
+20:42:22 - INFO - Seconds to response: 0.09
+20:42:22 - INFO - Response code: 200
+20:42:22 - INFO - Seconds to response: 0.09
+20:42:22 - INFO - Successfully converted response object to a CSV file.
+20:42:22 - INFO - Saving CSV to disk...
+20:42:22 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2022_pad_cdo_b_barri-des.csv.
+20:42:22 - INFO - 3 of 28 resources collected.
+20:42:22 - INFO - ■■■
+20:42:22 - INFO - Sending a request for 2021_pad_cdo_b_barri-des.csv.
+20:42:23 - INFO - Response code: 200
+20:42:23 - INFO - Seconds to response: 0.09
+20:42:23 - INFO - Response code: 200
+20:42:23 - INFO - Seconds to response: 0.09
+20:42:23 - INFO - Successfully converted response object to a CSV file.
+20:42:23 - INFO - Saving CSV to disk...
+20:42:23 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2021_pad_cdo_b_barri-des.csv.
+20:42:23 - INFO - 4 of 28 resources collected.
+20:42:23 - INFO - ■■■■
+20:42:23 - INFO - Sending a request for 2020_pad_cdo_b_barri-des.csv.
+20:42:24 - INFO - Response code: 200
+20:42:24 - INFO - Seconds to response: 0.09
+20:42:24 - INFO - Response code: 200
+20:42:24 - INFO - Seconds to response: 0.09
+20:42:24 - INFO - Successfully converted response object to a CSV file.
+20:42:24 - INFO - Saving CSV to disk...
+20:42:24 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2020_pad_cdo_b_barri-des.csv.
+20:42:24 - INFO - 5 of 28 resources collected.
+20:42:24 - INFO - ■■■■■
+20:42:24 - INFO - Sending a request for 2019_pad_cdo_b_barri-des.csv.
+20:42:25 - INFO - Response code: 200
+20:42:25 - INFO - Seconds to response: 0.09
+20:42:25 - INFO - Response code: 200
+20:42:25 - INFO - Seconds to response: 0.09
+20:42:25 - INFO - Successfully converted response object to a CSV file.
+20:42:25 - INFO - Saving CSV to disk...
+20:42:25 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2019_pad_cdo_b_barri-des.csv.
+20:42:25 - INFO - 6 of 28 resources collected.
+20:42:25 - INFO - ■■■■■■
+20:42:25 - INFO - Sending a request for 2018_pad_cdo_b_barri-des.csv.
+20:42:26 - INFO - Response code: 200
+20:42:26 - INFO - Seconds to response: 0.09
+20:42:26 - INFO - Response code: 200
+20:42:26 - INFO - Seconds to response: 0.09
+20:42:26 - INFO - Successfully converted response object to a CSV file.
+20:42:26 - INFO - Saving CSV to disk...
+20:42:26 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2018_pad_cdo_b_barri-des.csv.
+20:42:26 - INFO - 7 of 28 resources collected.
+20:42:26 - INFO - ■■■■■■■
+20:42:26 - INFO - Sending a request for 2017_pad_cdo_b_barri-des.csv.
+20:42:27 - INFO - Response code: 200
+20:42:27 - INFO - Seconds to response: 0.09
+20:42:27 - INFO - Response code: 200
+20:42:27 - INFO - Seconds to response: 0.09
+20:42:27 - INFO - Successfully converted response object to a CSV file.
+20:42:27 - INFO - Saving CSV to disk...
+20:42:27 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2017_pad_cdo_b_barri-des.csv.
+20:42:27 - INFO - 8 of 28 resources collected.
+20:42:27 - INFO - ■■■■■■■■
+20:42:27 - INFO - Sending a request for 2016_pad_cdo_b_barri-des.csv.
+20:42:28 - INFO - Response code: 200
+20:42:28 - INFO - Seconds to response: 0.09
+20:42:28 - INFO - Response code: 200
+20:42:28 - INFO - Seconds to response: 0.09
+20:42:28 - INFO - Successfully converted response object to a CSV file.
+20:42:28 - INFO - Saving CSV to disk...
+20:42:28 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2016_pad_cdo_b_barri-des.csv.
+20:42:28 - INFO - 9 of 28 resources collected.
+20:42:28 - INFO - ■■■■■■■■■
+20:42:28 - INFO - Sending a request for 2015_pad_cdo_b_barri-des.csv.
+20:42:29 - INFO - Response code: 200
+20:42:29 - INFO - Seconds to response: 0.09
+20:42:29 - INFO - Response code: 200
+20:42:29 - INFO - Seconds to response: 0.09
+20:42:29 - INFO - Successfully converted response object to a CSV file.
+20:42:29 - INFO - Saving CSV to disk...
+20:42:29 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2015_pad_cdo_b_barri-des.csv.
+20:42:29 - INFO - 10 of 28 resources collected.
+20:42:29 - INFO - ■■■■■■■■■■
+20:42:29 - INFO - Sending a request for 2014_pad_cdo_b_barri-des.csv.
+20:42:30 - INFO - Response code: 200
+20:42:30 - INFO - Seconds to response: 0.09
+20:42:30 - INFO - Response code: 200
+20:42:30 - INFO - Seconds to response: 0.09
+20:42:30 - INFO - Successfully converted response object to a CSV file.
+20:42:30 - INFO - Saving CSV to disk...
+20:42:30 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2014_pad_cdo_b_barri-des.csv.
+20:42:30 - INFO - 11 of 28 resources collected.
+20:42:30 - INFO - ■■■■■■■■■■■
+20:42:30 - INFO - Sending a request for 2013_pad_cdo_b_barri-des.csv.
+20:42:31 - INFO - Response code: 200
+20:42:31 - INFO - Seconds to response: 0.09
+20:42:31 - INFO - Response code: 200
+20:42:31 - INFO - Seconds to response: 0.09
+20:42:31 - INFO - Successfully converted response object to a CSV file.
+20:42:31 - INFO - Saving CSV to disk...
+20:42:31 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2013_pad_cdo_b_barri-des.csv.
+20:42:31 - INFO - 12 of 28 resources collected.
+20:42:31 - INFO - ■■■■■■■■■■■■
+20:42:31 - INFO - Sending a request for 2012_pad_cdo_b_barri-des.csv.
+20:42:32 - INFO - Response code: 200
+20:42:32 - INFO - Seconds to response: 0.09
+20:42:32 - INFO - Response code: 200
+20:42:32 - INFO - Seconds to response: 0.09
+20:42:32 - INFO - Successfully converted response object to a CSV file.
+20:42:32 - INFO - Saving CSV to disk...
+20:42:32 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2012_pad_cdo_b_barri-des.csv.
+20:42:32 - INFO - 13 of 28 resources collected.
+20:42:32 - INFO - ■■■■■■■■■■■■■
+20:42:32 - INFO - Sending a request for 2011_pad_cdo_b_barri-des.csv.
+20:42:33 - INFO - Response code: 200
+20:42:33 - INFO - Seconds to response: 0.09
+20:42:33 - INFO - Response code: 200
+20:42:33 - INFO - Seconds to response: 0.09
+20:42:33 - INFO - Successfully converted response object to a CSV file.
+20:42:33 - INFO - Saving CSV to disk...
+20:42:33 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2011_pad_cdo_b_barri-des.csv.
+20:42:33 - INFO - 14 of 28 resources collected.
+20:42:33 - INFO - ■■■■■■■■■■■■■■
+20:42:33 - INFO - Sending a request for 2010_pad_cdo_b_barri-des.csv.
+20:42:34 - INFO - Response code: 200
+20:42:34 - INFO - Seconds to response: 0.09
+20:42:34 - INFO - Response code: 200
+20:42:34 - INFO - Seconds to response: 0.09
+20:42:34 - INFO - Successfully converted response object to a CSV file.
+20:42:34 - INFO - Saving CSV to disk...
+20:42:34 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2010_pad_cdo_b_barri-des.csv.
+20:42:34 - INFO - 15 of 28 resources collected.
+20:42:34 - INFO - ■■■■■■■■■■■■■■■
+20:42:34 - INFO - Sending a request for 2009_pad_cdo_b_barri-des.csv.
+20:42:35 - INFO - Response code: 200
+20:42:35 - INFO - Seconds to response: 0.09
+20:42:35 - INFO - Response code: 200
+20:42:35 - INFO - Seconds to response: 0.09
+20:42:35 - INFO - Successfully converted response object to a CSV file.
+20:42:35 - INFO - Saving CSV to disk...
+20:42:35 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2009_pad_cdo_b_barri-des.csv.
+20:42:35 - INFO - 16 of 28 resources collected.
+20:42:35 - INFO - ■■■■■■■■■■■■■■■■
+20:42:35 - INFO - Sending a request for 2008_pad_cdo_b_barri-des.csv.
+20:42:36 - INFO - Response code: 200
+20:42:36 - INFO - Seconds to response: 0.09
+20:42:36 - INFO - Response code: 200
+20:42:36 - INFO - Seconds to response: 0.09
+20:42:36 - INFO - Successfully converted response object to a CSV file.
+20:42:36 - INFO - Saving CSV to disk...
+20:42:36 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2008_pad_cdo_b_barri-des.csv.
+20:42:36 - INFO - 17 of 28 resources collected.
+20:42:36 - INFO - ■■■■■■■■■■■■■■■■■
+20:42:36 - INFO - Sending a request for 2007_pad_cdo_b_barri-des.csv.
+20:42:37 - INFO - Response code: 200
+20:42:37 - INFO - Seconds to response: 0.09
+20:42:37 - INFO - Response code: 200
+20:42:37 - INFO - Seconds to response: 0.09
+20:42:37 - INFO - Successfully converted response object to a CSV file.
+20:42:37 - INFO - Saving CSV to disk...
+20:42:37 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2007_pad_cdo_b_barri-des.csv.
+20:42:37 - INFO - 18 of 28 resources collected.
+20:42:37 - INFO - ■■■■■■■■■■■■■■■■■■
+20:42:37 - INFO - Sending a request for 2006_pad_cdo_b_barri-des.csv.
+20:42:38 - INFO - Response code: 200
+20:42:38 - INFO - Seconds to response: 0.09
+20:42:38 - INFO - Response code: 200
+20:42:38 - INFO - Seconds to response: 0.09
+20:42:38 - INFO - Successfully converted response object to a CSV file.
+20:42:38 - INFO - Saving CSV to disk...
+20:42:38 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2006_pad_cdo_b_barri-des.csv.
+20:42:38 - INFO - 19 of 28 resources collected.
+20:42:38 - INFO - ■■■■■■■■■■■■■■■■■■■
+20:42:38 - INFO - Sending a request for 2005_pad_cdo_b_barri-des.csv.
+20:42:39 - INFO - Response code: 200
+20:42:39 - INFO - Seconds to response: 0.09
+20:42:39 - INFO - Response code: 200
+20:42:39 - INFO - Seconds to response: 0.09
+20:42:39 - INFO - Successfully converted response object to a CSV file.
+20:42:39 - INFO - Saving CSV to disk...
+20:42:39 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2005_pad_cdo_b_barri-des.csv.
+20:42:39 - INFO - 20 of 28 resources collected.
+20:42:39 - INFO - ■■■■■■■■■■■■■■■■■■■■
+20:42:39 - INFO - Sending a request for 2004_pad_cdo_b_barri-des.csv.
+20:42:40 - INFO - Response code: 200
+20:42:40 - INFO - Seconds to response: 0.09
+20:42:40 - INFO - Response code: 200
+20:42:40 - INFO - Seconds to response: 0.09
+20:42:40 - INFO - Successfully converted response object to a CSV file.
+20:42:40 - INFO - Saving CSV to disk...
+20:42:40 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2004_pad_cdo_b_barri-des.csv.
+20:42:40 - INFO - 21 of 28 resources collected.
+20:42:40 - INFO - ■■■■■■■■■■■■■■■■■■■■■
+20:42:40 - INFO - Sending a request for 2003_pad_cdo_b_barri-des.csv.
+20:42:41 - INFO - Response code: 200
+20:42:41 - INFO - Seconds to response: 0.09
+20:42:41 - INFO - Response code: 200
+20:42:41 - INFO - Seconds to response: 0.09
+20:42:41 - INFO - Successfully converted response object to a CSV file.
+20:42:41 - INFO - Saving CSV to disk...
+20:42:41 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2003_pad_cdo_b_barri-des.csv.
+20:42:41 - INFO - 22 of 28 resources collected.
+20:42:41 - INFO - ■■■■■■■■■■■■■■■■■■■■■■
+20:42:41 - INFO - Sending a request for 2002_pad_cdo_b_barri-des.csv.
+20:42:42 - INFO - Response code: 200
+20:42:42 - INFO - Seconds to response: 0.09
+20:42:42 - INFO - Response code: 200
+20:42:42 - INFO - Seconds to response: 0.09
+20:42:42 - INFO - Successfully converted response object to a CSV file.
+20:42:42 - INFO - Saving CSV to disk...
+20:42:42 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2002_pad_cdo_b_barri-des.csv.
+20:42:42 - INFO - 23 of 28 resources collected.
+20:42:42 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■
+20:42:42 - INFO - Sending a request for 2001_pad_cdo_b_barri-des.csv.
+20:42:43 - INFO - Response code: 200
+20:42:43 - INFO - Seconds to response: 0.09
+20:42:43 - INFO - Response code: 200
+20:42:43 - INFO - Seconds to response: 0.09
+20:42:43 - INFO - Successfully converted response object to a CSV file.
+20:42:43 - INFO - Saving CSV to disk...
+20:42:43 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2001_pad_cdo_b_barri-des.csv.
+20:42:43 - INFO - 24 of 28 resources collected.
+20:42:43 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:43 - INFO - Sending a request for 2000_pad_cdo_b_barri-des.csv.
+20:42:44 - INFO - Response code: 200
+20:42:44 - INFO - Seconds to response: 0.10
+20:42:44 - INFO - Response code: 200
+20:42:44 - INFO - Seconds to response: 0.10
+20:42:44 - INFO - Successfully converted response object to a CSV file.
+20:42:44 - INFO - Saving CSV to disk...
+20:42:44 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/2000_pad_cdo_b_barri-des.csv.
+20:42:44 - INFO - 25 of 28 resources collected.
+20:42:44 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:44 - INFO - Sending a request for 1999_pad_cdo_b_barri-des.csv.
+20:42:45 - INFO - Response code: 200
+20:42:45 - INFO - Seconds to response: 0.09
+20:42:45 - INFO - Response code: 200
+20:42:45 - INFO - Seconds to response: 0.09
+20:42:45 - INFO - Successfully converted response object to a CSV file.
+20:42:45 - INFO - Saving CSV to disk...
+20:42:45 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/1999_pad_cdo_b_barri-des.csv.
+20:42:45 - INFO - 26 of 28 resources collected.
+20:42:45 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:45 - INFO - Sending a request for 1998_pad_cdo_b_barri-des.csv.
+20:42:47 - INFO - Response code: 200
+20:42:47 - INFO - Seconds to response: 0.09
+20:42:47 - INFO - Response code: 200
+20:42:47 - INFO - Seconds to response: 0.09
+20:42:47 - INFO - Successfully converted response object to a CSV file.
+20:42:47 - INFO - Saving CSV to disk...
+20:42:47 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/1998_pad_cdo_b_barri-des.csv.
+20:42:47 - INFO - 27 of 28 resources collected.
+20:42:47 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:47 - INFO - Sending a request for 1997_pad_cdo_b_barri-des.csv.
+20:42:47 - INFO - Response code: 200
+20:42:47 - INFO - Seconds to response: 0.09
+20:42:47 - INFO - Response code: 200
+20:42:47 - INFO - Seconds to response: 0.09
+20:42:47 - INFO - Successfully converted response object to a CSV file.
+20:42:47 - INFO - Saving CSV to disk...
+20:42:47 - INFO - Succesfully saved CSV file to ./pad_cdo_b_barri-des/1997_pad_cdo_b_barri-des.csv.
+20:42:47 - INFO - 28 of 28 resources collected.
+20:42:47 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:47 - INFO - All done with pad_cdo_b_barri-des. Processing all the resources in this package took 27.37 seconds.
+20:42:47 - INFO - ////////////////////////////////////////////////////////
+20:42:47 - INFO - -------------------------------------------
+20:42:47 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_dones data package...
+20:42:48 - INFO - Response code: 200
+20:42:48 - INFO - Seconds to response: 0.30
+20:42:48 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_dones data package.
+20:42:48 - INFO - This package contains a total of 29 resources.
+20:42:48 - INFO - Downloading them now...
+20:42:48 - INFO - ////////////////////////////////////////////////////////
+20:42:48 - INFO - Sending a request for 2025_pad_dom_mdbas_dones.csv.
+20:42:48 - INFO - Response code: 200
+20:42:48 - INFO - Seconds to response: 0.09
+20:42:48 - INFO - Response code: 200
+20:42:48 - INFO - Seconds to response: 0.09
+20:42:48 - INFO - Successfully converted response object to a CSV file.
+20:42:48 - INFO - Saving CSV to disk...
+20:42:48 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2025_pad_dom_mdbas_dones.csv.
+20:42:48 - INFO - 1 of 29 resources collected.
+20:42:48 - INFO - ■
+20:42:48 - INFO - Sending a request for 2024_pad_dom_mdbas_dones.csv.
+20:42:49 - INFO - Response code: 200
+20:42:49 - INFO - Seconds to response: 0.09
+20:42:49 - INFO - Response code: 200
+20:42:49 - INFO - Seconds to response: 0.09
+20:42:49 - INFO - Successfully converted response object to a CSV file.
+20:42:49 - INFO - Saving CSV to disk...
+20:42:49 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2024_pad_dom_mdbas_dones.csv.
+20:42:49 - INFO - 2 of 29 resources collected.
+20:42:49 - INFO - ■■
+20:42:49 - INFO - Sending a request for 2023_pad_dom_mdbas_dones.csv.
+20:42:50 - INFO - Response code: 200
+20:42:50 - INFO - Seconds to response: 0.09
+20:42:50 - INFO - Response code: 200
+20:42:50 - INFO - Seconds to response: 0.09
+20:42:50 - INFO - Successfully converted response object to a CSV file.
+20:42:50 - INFO - Saving CSV to disk...
+20:42:50 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2023_pad_dom_mdbas_dones.csv.
+20:42:50 - INFO - 3 of 29 resources collected.
+20:42:50 - INFO - ■■■
+20:42:50 - INFO - Sending a request for 2022_pad_dom_mdbas_dones.csv.
+20:42:51 - INFO - Response code: 200
+20:42:51 - INFO - Seconds to response: 0.09
+20:42:51 - INFO - Response code: 200
+20:42:51 - INFO - Seconds to response: 0.09
+20:42:51 - INFO - Successfully converted response object to a CSV file.
+20:42:51 - INFO - Saving CSV to disk...
+20:42:51 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2022_pad_dom_mdbas_dones.csv.
+20:42:51 - INFO - 4 of 29 resources collected.
+20:42:51 - INFO - ■■■■
+20:42:51 - INFO - Sending a request for 2021_pad_dom_mdbas_dones.csv.
+20:42:52 - INFO - Response code: 200
+20:42:52 - INFO - Seconds to response: 0.09
+20:42:52 - INFO - Response code: 200
+20:42:52 - INFO - Seconds to response: 0.09
+20:42:52 - INFO - Successfully converted response object to a CSV file.
+20:42:52 - INFO - Saving CSV to disk...
+20:42:52 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2021_pad_dom_mdbas_dones.csv.
+20:42:52 - INFO - 5 of 29 resources collected.
+20:42:52 - INFO - ■■■■■
+20:42:52 - INFO - Sending a request for 2020_pad_dom_mdbas_dones.csv.
+20:42:53 - INFO - Response code: 200
+20:42:53 - INFO - Seconds to response: 0.09
+20:42:53 - INFO - Response code: 200
+20:42:53 - INFO - Seconds to response: 0.09
+20:42:53 - INFO - Successfully converted response object to a CSV file.
+20:42:53 - INFO - Saving CSV to disk...
+20:42:53 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2020_pad_dom_mdbas_dones.csv.
+20:42:53 - INFO - 6 of 29 resources collected.
+20:42:53 - INFO - ■■■■■■
+20:42:53 - INFO - Sending a request for 2019_pad_dom_mdbas_dones.csv.
+20:42:54 - INFO - Response code: 200
+20:42:54 - INFO - Seconds to response: 0.09
+20:42:54 - INFO - Response code: 200
+20:42:54 - INFO - Seconds to response: 0.09
+20:42:54 - INFO - Successfully converted response object to a CSV file.
+20:42:54 - INFO - Saving CSV to disk...
+20:42:54 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2019_pad_dom_mdbas_dones.csv.
+20:42:54 - INFO - 7 of 29 resources collected.
+20:42:54 - INFO - ■■■■■■■
+20:42:54 - INFO - Sending a request for 2018_pad_dom_mdbas_dones.csv.
+20:42:55 - INFO - Response code: 200
+20:42:55 - INFO - Seconds to response: 0.09
+20:42:55 - INFO - Response code: 200
+20:42:55 - INFO - Seconds to response: 0.09
+20:42:55 - INFO - Successfully converted response object to a CSV file.
+20:42:55 - INFO - Saving CSV to disk...
+20:42:55 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2018_pad_dom_mdbas_dones.csv.
+20:42:55 - INFO - 8 of 29 resources collected.
+20:42:55 - INFO - ■■■■■■■■
+20:42:55 - INFO - Sending a request for 2017_pad_dom_mdbas_dones.csv.
+20:42:56 - INFO - Response code: 200
+20:42:56 - INFO - Seconds to response: 0.09
+20:42:56 - INFO - Response code: 200
+20:42:56 - INFO - Seconds to response: 0.09
+20:42:56 - INFO - Successfully converted response object to a CSV file.
+20:42:56 - INFO - Saving CSV to disk...
+20:42:56 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2017_pad_dom_mdbas_dones.csv.
+20:42:56 - INFO - 9 of 29 resources collected.
+20:42:56 - INFO - ■■■■■■■■■
+20:42:56 - INFO - Sending a request for 2016_pad_dom_mdbas_dones.csv.
+20:42:57 - INFO - Response code: 200
+20:42:57 - INFO - Seconds to response: 0.09
+20:42:57 - INFO - Response code: 200
+20:42:57 - INFO - Seconds to response: 0.09
+20:42:57 - INFO - Successfully converted response object to a CSV file.
+20:42:57 - INFO - Saving CSV to disk...
+20:42:57 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2016_pad_dom_mdbas_dones.csv.
+20:42:57 - INFO - 10 of 29 resources collected.
+20:42:57 - INFO - ■■■■■■■■■■
+20:42:57 - INFO - Sending a request for 2015_pad_dom_mdbas_dones.csv.
+20:42:58 - INFO - Response code: 200
+20:42:58 - INFO - Seconds to response: 0.09
+20:42:58 - INFO - Response code: 200
+20:42:58 - INFO - Seconds to response: 0.09
+20:42:58 - INFO - Successfully converted response object to a CSV file.
+20:42:58 - INFO - Saving CSV to disk...
+20:42:58 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2015_pad_dom_mdbas_dones.csv.
+20:42:58 - INFO - 11 of 29 resources collected.
+20:42:58 - INFO - ■■■■■■■■■■■
+20:42:58 - INFO - Sending a request for 2014_pad_dom_mdbas_dones.csv.
+20:42:59 - INFO - Response code: 200
+20:42:59 - INFO - Seconds to response: 0.09
+20:42:59 - INFO - Response code: 200
+20:42:59 - INFO - Seconds to response: 0.09
+20:42:59 - INFO - Successfully converted response object to a CSV file.
+20:42:59 - INFO - Saving CSV to disk...
+20:42:59 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2014_pad_dom_mdbas_dones.csv.
+20:42:59 - INFO - 12 of 29 resources collected.
+20:42:59 - INFO - ■■■■■■■■■■■■
+20:42:59 - INFO - Sending a request for 2013_pad_dom_mdbas_dones.csv.
+20:43:00 - INFO - Response code: 200
+20:43:00 - INFO - Seconds to response: 0.09
+20:43:00 - INFO - Response code: 200
+20:43:00 - INFO - Seconds to response: 0.09
+20:43:00 - INFO - Successfully converted response object to a CSV file.
+20:43:00 - INFO - Saving CSV to disk...
+20:43:00 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2013_pad_dom_mdbas_dones.csv.
+20:43:00 - INFO - 13 of 29 resources collected.
+20:43:00 - INFO - ■■■■■■■■■■■■■
+20:43:00 - INFO - Sending a request for 2012_pad_dom_mdbas_dones.csv.
+20:43:01 - INFO - Response code: 200
+20:43:01 - INFO - Seconds to response: 0.09
+20:43:01 - INFO - Response code: 200
+20:43:01 - INFO - Seconds to response: 0.09
+20:43:01 - INFO - Successfully converted response object to a CSV file.
+20:43:01 - INFO - Saving CSV to disk...
+20:43:01 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2012_pad_dom_mdbas_dones.csv.
+20:43:01 - INFO - 14 of 29 resources collected.
+20:43:01 - INFO - ■■■■■■■■■■■■■■
+20:43:01 - INFO - Sending a request for 2011_pad_dom_mdbas_dones.csv.
+20:43:02 - INFO - Response code: 200
+20:43:02 - INFO - Seconds to response: 0.09
+20:43:02 - INFO - Response code: 200
+20:43:02 - INFO - Seconds to response: 0.09
+20:43:02 - INFO - Successfully converted response object to a CSV file.
+20:43:02 - INFO - Saving CSV to disk...
+20:43:02 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2011_pad_dom_mdbas_dones.csv.
+20:43:02 - INFO - 15 of 29 resources collected.
+20:43:02 - INFO - ■■■■■■■■■■■■■■■
+20:43:02 - INFO - Sending a request for 2010_pad_dom_mdbas_dones.csv.
+20:43:03 - INFO - Response code: 200
+20:43:03 - INFO - Seconds to response: 0.09
+20:43:03 - INFO - Response code: 200
+20:43:03 - INFO - Seconds to response: 0.09
+20:43:03 - INFO - Successfully converted response object to a CSV file.
+20:43:03 - INFO - Saving CSV to disk...
+20:43:03 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2010_pad_dom_mdbas_dones.csv.
+20:43:03 - INFO - 16 of 29 resources collected.
+20:43:03 - INFO - ■■■■■■■■■■■■■■■■
+20:43:03 - INFO - Sending a request for 2009_pad_dom_mdbas_dones.csv.
+20:43:04 - INFO - Response code: 200
+20:43:04 - INFO - Seconds to response: 0.09
+20:43:04 - INFO - Response code: 200
+20:43:04 - INFO - Seconds to response: 0.09
+20:43:04 - INFO - Successfully converted response object to a CSV file.
+20:43:04 - INFO - Saving CSV to disk...
+20:43:04 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2009_pad_dom_mdbas_dones.csv.
+20:43:04 - INFO - 17 of 29 resources collected.
+20:43:04 - INFO - ■■■■■■■■■■■■■■■■■
+20:43:04 - INFO - Sending a request for 2008_pad_dom_mdbas_dones.csv.
+20:43:05 - INFO - Response code: 200
+20:43:05 - INFO - Seconds to response: 0.09
+20:43:05 - INFO - Response code: 200
+20:43:05 - INFO - Seconds to response: 0.09
+20:43:05 - INFO - Successfully converted response object to a CSV file.
+20:43:05 - INFO - Saving CSV to disk...
+20:43:05 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2008_pad_dom_mdbas_dones.csv.
+20:43:05 - INFO - 18 of 29 resources collected.
+20:43:05 - INFO - ■■■■■■■■■■■■■■■■■■
+20:43:05 - INFO - Sending a request for 2007_pad_dom_mdbas_dones.csv.
+20:43:06 - INFO - Response code: 200
+20:43:06 - INFO - Seconds to response: 0.09
+20:43:06 - INFO - Response code: 200
+20:43:06 - INFO - Seconds to response: 0.09
+20:43:06 - INFO - Successfully converted response object to a CSV file.
+20:43:06 - INFO - Saving CSV to disk...
+20:43:06 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2007_pad_dom_mdbas_dones.csv.
+20:43:06 - INFO - 19 of 29 resources collected.
+20:43:06 - INFO - ■■■■■■■■■■■■■■■■■■■
+20:43:06 - INFO - Sending a request for 2006_pad_dom_mdbas_dones.csv.
+20:43:07 - INFO - Response code: 200
+20:43:07 - INFO - Seconds to response: 0.09
+20:43:07 - INFO - Response code: 200
+20:43:07 - INFO - Seconds to response: 0.09
+20:43:07 - INFO - Successfully converted response object to a CSV file.
+20:43:07 - INFO - Saving CSV to disk...
+20:43:07 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2006_pad_dom_mdbas_dones.csv.
+20:43:07 - INFO - 20 of 29 resources collected.
+20:43:07 - INFO - ■■■■■■■■■■■■■■■■■■■■
+20:43:07 - INFO - Sending a request for 2005_pad_dom_mdbas_dones.csv.
+20:43:08 - INFO - Response code: 200
+20:43:08 - INFO - Seconds to response: 0.09
+20:43:08 - INFO - Response code: 200
+20:43:08 - INFO - Seconds to response: 0.09
+20:43:08 - INFO - Successfully converted response object to a CSV file.
+20:43:08 - INFO - Saving CSV to disk...
+20:43:08 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2005_pad_dom_mdbas_dones.csv.
+20:43:08 - INFO - 21 of 29 resources collected.
+20:43:08 - INFO - ■■■■■■■■■■■■■■■■■■■■■
+20:43:08 - INFO - Sending a request for 2004_pad_dom_mdbas_dones.csv.
+20:43:09 - INFO - Response code: 200
+20:43:09 - INFO - Seconds to response: 0.09
+20:43:09 - INFO - Response code: 200
+20:43:09 - INFO - Seconds to response: 0.09
+20:43:09 - INFO - Successfully converted response object to a CSV file.
+20:43:09 - INFO - Saving CSV to disk...
+20:43:09 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2004_pad_dom_mdbas_dones.csv.
+20:43:09 - INFO - 22 of 29 resources collected.
+20:43:09 - INFO - ■■■■■■■■■■■■■■■■■■■■■■
+20:43:09 - INFO - Sending a request for 2003_pad_dom_mdbas_dones.csv.
+20:43:10 - INFO - Response code: 200
+20:43:10 - INFO - Seconds to response: 0.09
+20:43:10 - INFO - Response code: 200
+20:43:10 - INFO - Seconds to response: 0.09
+20:43:10 - INFO - Successfully converted response object to a CSV file.
+20:43:10 - INFO - Saving CSV to disk...
+20:43:10 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2003_pad_dom_mdbas_dones.csv.
+20:43:10 - INFO - 23 of 29 resources collected.
+20:43:10 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■
+20:43:10 - INFO - Sending a request for 2002_pad_dom_mdbas_dones.csv.
+20:43:11 - INFO - Response code: 200
+20:43:11 - INFO - Seconds to response: 0.09
+20:43:11 - INFO - Response code: 200
+20:43:11 - INFO - Seconds to response: 0.09
+20:43:11 - INFO - Successfully converted response object to a CSV file.
+20:43:11 - INFO - Saving CSV to disk...
+20:43:11 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2002_pad_dom_mdbas_dones.csv.
+20:43:11 - INFO - 24 of 29 resources collected.
+20:43:11 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:11 - INFO - Sending a request for 2001_pad_dom_mdbas_dones.csv.
+20:43:12 - INFO - Response code: 200
+20:43:12 - INFO - Seconds to response: 0.09
+20:43:12 - INFO - Response code: 200
+20:43:12 - INFO - Seconds to response: 0.09
+20:43:12 - INFO - Successfully converted response object to a CSV file.
+20:43:12 - INFO - Saving CSV to disk...
+20:43:12 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2001_pad_dom_mdbas_dones.csv.
+20:43:12 - INFO - 25 of 29 resources collected.
+20:43:12 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:12 - INFO - Sending a request for 2000_pad_dom_mdbas_dones.csv.
+20:43:13 - INFO - Response code: 200
+20:43:13 - INFO - Seconds to response: 0.09
+20:43:13 - INFO - Response code: 200
+20:43:13 - INFO - Seconds to response: 0.09
+20:43:13 - INFO - Successfully converted response object to a CSV file.
+20:43:13 - INFO - Saving CSV to disk...
+20:43:13 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/2000_pad_dom_mdbas_dones.csv.
+20:43:13 - INFO - 26 of 29 resources collected.
+20:43:13 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:13 - INFO - Sending a request for 1999_pad_dom_mdbas_dones.csv.
+20:43:14 - INFO - Response code: 200
+20:43:14 - INFO - Seconds to response: 0.10
+20:43:14 - INFO - Response code: 200
+20:43:14 - INFO - Seconds to response: 0.10
+20:43:14 - INFO - Successfully converted response object to a CSV file.
+20:43:14 - INFO - Saving CSV to disk...
+20:43:14 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/1999_pad_dom_mdbas_dones.csv.
+20:43:14 - INFO - 27 of 29 resources collected.
+20:43:14 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:14 - INFO - Sending a request for 1998_pad_dom_mdbas_dones.csv.
+20:43:15 - INFO - Response code: 200
+20:43:15 - INFO - Seconds to response: 0.09
+20:43:15 - INFO - Response code: 200
+20:43:15 - INFO - Seconds to response: 0.09
+20:43:15 - INFO - Successfully converted response object to a CSV file.
+20:43:15 - INFO - Saving CSV to disk...
+20:43:15 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/1998_pad_dom_mdbas_dones.csv.
+20:43:15 - INFO - 28 of 29 resources collected.
+20:43:15 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:15 - INFO - Sending a request for 1997_pad_dom_mdbas_dones.csv.
+20:43:16 - INFO - Response code: 200
+20:43:16 - INFO - Seconds to response: 0.09
+20:43:16 - INFO - Response code: 200
+20:43:16 - INFO - Seconds to response: 0.09
+20:43:16 - INFO - Successfully converted response object to a CSV file.
+20:43:16 - INFO - Saving CSV to disk...
+20:43:16 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_dones/1997_pad_dom_mdbas_dones.csv.
+20:43:16 - INFO - 29 of 29 resources collected.
+20:43:16 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:16 - INFO - All done with pad_dom_mdbas_dones. Processing all the resources in this package took 28.72 seconds.
+20:43:16 - INFO - ////////////////////////////////////////////////////////
+20:43:16 - INFO - -------------------------------------------
+20:43:16 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_edat-0018 data package...
+20:43:17 - INFO - Response code: 200
+20:43:17 - INFO - Seconds to response: 0.30
+20:43:17 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_edat-0018 data package.
+20:43:17 - INFO - This package contains a total of 29 resources.
+20:43:17 - INFO - Downloading them now...
+20:43:17 - INFO - ////////////////////////////////////////////////////////
+20:43:17 - INFO - Sending a request for 2025_pad_dom_mdbas_edat-0018.csv.
+20:43:17 - INFO - Response code: 200
+20:43:17 - INFO - Seconds to response: 0.09
+20:43:17 - INFO - Response code: 200
+20:43:17 - INFO - Seconds to response: 0.09
+20:43:17 - INFO - Successfully converted response object to a CSV file.
+20:43:17 - INFO - Saving CSV to disk...
+20:43:17 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2025_pad_dom_mdbas_edat-0018.csv.
+20:43:17 - INFO - 1 of 29 resources collected.
+20:43:17 - INFO - ■
+20:43:17 - INFO - Sending a request for 2024_pad_dom_mdbas_edat-0018.csv.
+20:43:18 - INFO - Response code: 200
+20:43:18 - INFO - Seconds to response: 0.09
+20:43:18 - INFO - Response code: 200
+20:43:18 - INFO - Seconds to response: 0.09
+20:43:18 - INFO - Successfully converted response object to a CSV file.
+20:43:18 - INFO - Saving CSV to disk...
+20:43:18 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2024_pad_dom_mdbas_edat-0018.csv.
+20:43:18 - INFO - 2 of 29 resources collected.
+20:43:18 - INFO - ■■
+20:43:18 - INFO - Sending a request for 2023_pad_dom_mdbas_edat-0018.csv.
+20:43:19 - INFO - Response code: 200
+20:43:19 - INFO - Seconds to response: 0.09
+20:43:19 - INFO - Response code: 200
+20:43:19 - INFO - Seconds to response: 0.09
+20:43:19 - INFO - Successfully converted response object to a CSV file.
+20:43:19 - INFO - Saving CSV to disk...
+20:43:19 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2023_pad_dom_mdbas_edat-0018.csv.
+20:43:19 - INFO - 3 of 29 resources collected.
+20:43:19 - INFO - ■■■
+20:43:19 - INFO - Sending a request for 2022_pad_dom_mdbas_edat-0018.csv.
+20:43:20 - INFO - Response code: 200
+20:43:20 - INFO - Seconds to response: 0.09
+20:43:20 - INFO - Response code: 200
+20:43:20 - INFO - Seconds to response: 0.09
+20:43:20 - INFO - Successfully converted response object to a CSV file.
+20:43:20 - INFO - Saving CSV to disk...
+20:43:20 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2022_pad_dom_mdbas_edat-0018.csv.
+20:43:20 - INFO - 4 of 29 resources collected.
+20:43:20 - INFO - ■■■■
+20:43:20 - INFO - Sending a request for 2021_pad_dom_mdbas_edat-0018.csv.
+20:43:21 - INFO - Response code: 200
+20:43:21 - INFO - Seconds to response: 0.09
+20:43:21 - INFO - Response code: 200
+20:43:21 - INFO - Seconds to response: 0.09
+20:43:21 - INFO - Successfully converted response object to a CSV file.
+20:43:21 - INFO - Saving CSV to disk...
+20:43:21 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2021_pad_dom_mdbas_edat-0018.csv.
+20:43:21 - INFO - 5 of 29 resources collected.
+20:43:21 - INFO - ■■■■■
+20:43:21 - INFO - Sending a request for 2020_pad_dom_mdbas_edat-0018.csv.
+20:43:22 - INFO - Response code: 200
+20:43:22 - INFO - Seconds to response: 0.09
+20:43:22 - INFO - Response code: 200
+20:43:22 - INFO - Seconds to response: 0.09
+20:43:22 - INFO - Successfully converted response object to a CSV file.
+20:43:22 - INFO - Saving CSV to disk...
+20:43:22 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2020_pad_dom_mdbas_edat-0018.csv.
+20:43:22 - INFO - 6 of 29 resources collected.
+20:43:22 - INFO - ■■■■■■
+20:43:22 - INFO - Sending a request for 2019_pad_dom_mdbas_edat-0018.csv.
+20:43:23 - INFO - Response code: 200
+20:43:23 - INFO - Seconds to response: 0.09
+20:43:23 - INFO - Response code: 200
+20:43:23 - INFO - Seconds to response: 0.09
+20:43:23 - INFO - Successfully converted response object to a CSV file.
+20:43:23 - INFO - Saving CSV to disk...
+20:43:23 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2019_pad_dom_mdbas_edat-0018.csv.
+20:43:23 - INFO - 7 of 29 resources collected.
+20:43:23 - INFO - ■■■■■■■
+20:43:23 - INFO - Sending a request for 2018_pad_dom_mdbas_edat-0018.csv.
+20:43:24 - INFO - Response code: 200
+20:43:24 - INFO - Seconds to response: 0.09
+20:43:24 - INFO - Response code: 200
+20:43:24 - INFO - Seconds to response: 0.09
+20:43:24 - INFO - Successfully converted response object to a CSV file.
+20:43:24 - INFO - Saving CSV to disk...
+20:43:24 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2018_pad_dom_mdbas_edat-0018.csv.
+20:43:24 - INFO - 8 of 29 resources collected.
+20:43:24 - INFO - ■■■■■■■■
+20:43:24 - INFO - Sending a request for 2017_pad_dom_mdbas_edat-0018.csv.
+20:43:25 - INFO - Response code: 200
+20:43:25 - INFO - Seconds to response: 0.09
+20:43:25 - INFO - Response code: 200
+20:43:25 - INFO - Seconds to response: 0.09
+20:43:25 - INFO - Successfully converted response object to a CSV file.
+20:43:25 - INFO - Saving CSV to disk...
+20:43:25 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2017_pad_dom_mdbas_edat-0018.csv.
+20:43:25 - INFO - 9 of 29 resources collected.
+20:43:25 - INFO - ■■■■■■■■■
+20:43:25 - INFO - Sending a request for 2016_pad_dom_mdbas_edat-0018.csv.
+20:43:26 - INFO - Response code: 200
+20:43:26 - INFO - Seconds to response: 0.10
+20:43:26 - INFO - Response code: 200
+20:43:26 - INFO - Seconds to response: 0.10
+20:43:26 - INFO - Successfully converted response object to a CSV file.
+20:43:26 - INFO - Saving CSV to disk...
+20:43:26 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2016_pad_dom_mdbas_edat-0018.csv.
+20:43:26 - INFO - 10 of 29 resources collected.
+20:43:26 - INFO - ■■■■■■■■■■
+20:43:26 - INFO - Sending a request for 2015_pad_dom_mdbas_edat-0018.csv.
+20:43:27 - INFO - Response code: 200
+20:43:27 - INFO - Seconds to response: 0.09
+20:43:27 - INFO - Response code: 200
+20:43:27 - INFO - Seconds to response: 0.09
+20:43:27 - INFO - Successfully converted response object to a CSV file.
+20:43:27 - INFO - Saving CSV to disk...
+20:43:27 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2015_pad_dom_mdbas_edat-0018.csv.
+20:43:27 - INFO - 11 of 29 resources collected.
+20:43:27 - INFO - ■■■■■■■■■■■
+20:43:27 - INFO - Sending a request for 2014_pad_dom_mdbas_edat-0018.csv.
+20:43:28 - INFO - Response code: 200
+20:43:28 - INFO - Seconds to response: 0.09
+20:43:28 - INFO - Response code: 200
+20:43:28 - INFO - Seconds to response: 0.09
+20:43:28 - INFO - Successfully converted response object to a CSV file.
+20:43:28 - INFO - Saving CSV to disk...
+20:43:28 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2014_pad_dom_mdbas_edat-0018.csv.
+20:43:28 - INFO - 12 of 29 resources collected.
+20:43:28 - INFO - ■■■■■■■■■■■■
+20:43:28 - INFO - Sending a request for 2013_pad_dom_mdbas_edat-0018.csv.
+20:43:29 - INFO - Response code: 200
+20:43:29 - INFO - Seconds to response: 0.09
+20:43:29 - INFO - Response code: 200
+20:43:29 - INFO - Seconds to response: 0.09
+20:43:29 - INFO - Successfully converted response object to a CSV file.
+20:43:29 - INFO - Saving CSV to disk...
+20:43:29 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2013_pad_dom_mdbas_edat-0018.csv.
+20:43:29 - INFO - 13 of 29 resources collected.
+20:43:29 - INFO - ■■■■■■■■■■■■■
+20:43:29 - INFO - Sending a request for 2012_pad_dom_mdbas_edat-0018.csv.
+20:43:30 - INFO - Response code: 200
+20:43:30 - INFO - Seconds to response: 0.09
+20:43:30 - INFO - Response code: 200
+20:43:30 - INFO - Seconds to response: 0.09
+20:43:30 - INFO - Successfully converted response object to a CSV file.
+20:43:30 - INFO - Saving CSV to disk...
+20:43:30 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2012_pad_dom_mdbas_edat-0018.csv.
+20:43:30 - INFO - 14 of 29 resources collected.
+20:43:30 - INFO - ■■■■■■■■■■■■■■
+20:43:30 - INFO - Sending a request for 2011_pad_dom_mdbas_edat-0018.csv.
+20:43:31 - INFO - Response code: 200
+20:43:31 - INFO - Seconds to response: 0.09
+20:43:31 - INFO - Response code: 200
+20:43:31 - INFO - Seconds to response: 0.09
+20:43:31 - INFO - Successfully converted response object to a CSV file.
+20:43:31 - INFO - Saving CSV to disk...
+20:43:31 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2011_pad_dom_mdbas_edat-0018.csv.
+20:43:31 - INFO - 15 of 29 resources collected.
+20:43:31 - INFO - ■■■■■■■■■■■■■■■
+20:43:31 - INFO - Sending a request for 2010_pad_dom_mdbas_edat-0018.csv.
+20:43:32 - INFO - Response code: 200
+20:43:32 - INFO - Seconds to response: 0.09
+20:43:32 - INFO - Response code: 200
+20:43:32 - INFO - Seconds to response: 0.09
+20:43:32 - INFO - Successfully converted response object to a CSV file.
+20:43:32 - INFO - Saving CSV to disk...
+20:43:32 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2010_pad_dom_mdbas_edat-0018.csv.
+20:43:32 - INFO - 16 of 29 resources collected.
+20:43:32 - INFO - ■■■■■■■■■■■■■■■■
+20:43:32 - INFO - Sending a request for 2009_pad_dom_mdbas_edat-0018.csv.
+20:43:33 - INFO - Response code: 200
+20:43:33 - INFO - Seconds to response: 0.09
+20:43:33 - INFO - Response code: 200
+20:43:33 - INFO - Seconds to response: 0.09
+20:43:33 - INFO - Successfully converted response object to a CSV file.
+20:43:33 - INFO - Saving CSV to disk...
+20:43:33 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2009_pad_dom_mdbas_edat-0018.csv.
+20:43:33 - INFO - 17 of 29 resources collected.
+20:43:33 - INFO - ■■■■■■■■■■■■■■■■■
+20:43:33 - INFO - Sending a request for 2008_pad_dom_mdbas_edat-0018.csv.
+20:43:34 - INFO - Response code: 200
+20:43:34 - INFO - Seconds to response: 0.09
+20:43:34 - INFO - Response code: 200
+20:43:34 - INFO - Seconds to response: 0.09
+20:43:34 - INFO - Successfully converted response object to a CSV file.
+20:43:34 - INFO - Saving CSV to disk...
+20:43:34 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2008_pad_dom_mdbas_edat-0018.csv.
+20:43:34 - INFO - 18 of 29 resources collected.
+20:43:34 - INFO - ■■■■■■■■■■■■■■■■■■
+20:43:34 - INFO - Sending a request for 2007_pad_dom_mdbas_edat-0018.csv.
+20:43:35 - INFO - Response code: 200
+20:43:35 - INFO - Seconds to response: 0.10
+20:43:35 - INFO - Response code: 200
+20:43:35 - INFO - Seconds to response: 0.10
+20:43:35 - INFO - Successfully converted response object to a CSV file.
+20:43:35 - INFO - Saving CSV to disk...
+20:43:35 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2007_pad_dom_mdbas_edat-0018.csv.
+20:43:35 - INFO - 19 of 29 resources collected.
+20:43:35 - INFO - ■■■■■■■■■■■■■■■■■■■
+20:43:35 - INFO - Sending a request for 2006_pad_dom_mdbas_edat-0018.csv.
+20:43:36 - INFO - Response code: 200
+20:43:36 - INFO - Seconds to response: 0.09
+20:43:36 - INFO - Response code: 200
+20:43:36 - INFO - Seconds to response: 0.09
+20:43:36 - INFO - Successfully converted response object to a CSV file.
+20:43:36 - INFO - Saving CSV to disk...
+20:43:36 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2006_pad_dom_mdbas_edat-0018.csv.
+20:43:36 - INFO - 20 of 29 resources collected.
+20:43:36 - INFO - ■■■■■■■■■■■■■■■■■■■■
+20:43:36 - INFO - Sending a request for 2005_pad_dom_mdbas_edat-0018.csv.
+20:43:37 - INFO - Response code: 200
+20:43:37 - INFO - Seconds to response: 0.09
+20:43:37 - INFO - Response code: 200
+20:43:37 - INFO - Seconds to response: 0.09
+20:43:37 - INFO - Successfully converted response object to a CSV file.
+20:43:37 - INFO - Saving CSV to disk...
+20:43:37 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2005_pad_dom_mdbas_edat-0018.csv.
+20:43:37 - INFO - 21 of 29 resources collected.
+20:43:37 - INFO - ■■■■■■■■■■■■■■■■■■■■■
+20:43:37 - INFO - Sending a request for 2004_pad_dom_mdbas_edat-0018.csv.
+20:43:38 - INFO - Response code: 200
+20:43:38 - INFO - Seconds to response: 0.09
+20:43:38 - INFO - Response code: 200
+20:43:38 - INFO - Seconds to response: 0.09
+20:43:38 - INFO - Successfully converted response object to a CSV file.
+20:43:38 - INFO - Saving CSV to disk...
+20:43:38 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2004_pad_dom_mdbas_edat-0018.csv.
+20:43:38 - INFO - 22 of 29 resources collected.
+20:43:38 - INFO - ■■■■■■■■■■■■■■■■■■■■■■
+20:43:38 - INFO - Sending a request for 2003_pad_dom_mdbas_edat-0018.csv.
+20:43:39 - INFO - Response code: 200
+20:43:39 - INFO - Seconds to response: 0.09
+20:43:39 - INFO - Response code: 200
+20:43:39 - INFO - Seconds to response: 0.09
+20:43:39 - INFO - Successfully converted response object to a CSV file.
+20:43:39 - INFO - Saving CSV to disk...
+20:43:39 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2003_pad_dom_mdbas_edat-0018.csv.
+20:43:39 - INFO - 23 of 29 resources collected.
+20:43:39 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■
+20:43:39 - INFO - Sending a request for 2002_pad_dom_mdbas_edat-0018.csv.
+20:43:40 - INFO - Response code: 200
+20:43:40 - INFO - Seconds to response: 0.09
+20:43:40 - INFO - Response code: 200
+20:43:40 - INFO - Seconds to response: 0.09
+20:43:40 - INFO - Successfully converted response object to a CSV file.
+20:43:40 - INFO - Saving CSV to disk...
+20:43:40 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2002_pad_dom_mdbas_edat-0018.csv.
+20:43:40 - INFO - 24 of 29 resources collected.
+20:43:40 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:40 - INFO - Sending a request for 2001_pad_dom_mdbas_edat-0018.csv.
+20:43:41 - INFO - Response code: 200
+20:43:41 - INFO - Seconds to response: 0.09
+20:43:41 - INFO - Response code: 200
+20:43:41 - INFO - Seconds to response: 0.09
+20:43:41 - INFO - Successfully converted response object to a CSV file.
+20:43:41 - INFO - Saving CSV to disk...
+20:43:41 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2001_pad_dom_mdbas_edat-0018.csv.
+20:43:41 - INFO - 25 of 29 resources collected.
+20:43:41 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:41 - INFO - Sending a request for 2000_pad_dom_mdbas_edat-0018.csv.
+20:43:42 - INFO - Response code: 200
+20:43:42 - INFO - Seconds to response: 0.09
+20:43:42 - INFO - Response code: 200
+20:43:42 - INFO - Seconds to response: 0.09
+20:43:42 - INFO - Successfully converted response object to a CSV file.
+20:43:42 - INFO - Saving CSV to disk...
+20:43:42 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/2000_pad_dom_mdbas_edat-0018.csv.
+20:43:42 - INFO - 26 of 29 resources collected.
+20:43:42 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:42 - INFO - Sending a request for 1999_pad_dom_mdbas_edat-0018.csv.
+20:43:43 - INFO - Response code: 200
+20:43:43 - INFO - Seconds to response: 0.09
+20:43:43 - INFO - Response code: 200
+20:43:43 - INFO - Seconds to response: 0.09
+20:43:43 - INFO - Successfully converted response object to a CSV file.
+20:43:43 - INFO - Saving CSV to disk...
+20:43:43 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/1999_pad_dom_mdbas_edat-0018.csv.
+20:43:43 - INFO - 27 of 29 resources collected.
+20:43:43 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:43 - INFO - Sending a request for 1998_pad_dom_mdbas_edat-0018.csv.
+20:43:44 - INFO - Response code: 200
+20:43:44 - INFO - Seconds to response: 0.09
+20:43:44 - INFO - Response code: 200
+20:43:44 - INFO - Seconds to response: 0.09
+20:43:44 - INFO - Successfully converted response object to a CSV file.
+20:43:44 - INFO - Saving CSV to disk...
+20:43:44 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/1998_pad_dom_mdbas_edat-0018.csv.
+20:43:44 - INFO - 28 of 29 resources collected.
+20:43:44 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:44 - INFO - Sending a request for 1997_pad_dom_mdbas_edat-0018.csv.
+20:43:45 - INFO - Response code: 200
+20:43:45 - INFO - Seconds to response: 0.09
+20:43:45 - INFO - Response code: 200
+20:43:45 - INFO - Seconds to response: 0.09
+20:43:45 - INFO - Successfully converted response object to a CSV file.
+20:43:45 - INFO - Saving CSV to disk...
+20:43:45 - INFO - Succesfully saved CSV file to ./pad_dom_mdbas_edat-0018/1997_pad_dom_mdbas_edat-0018.csv.
+20:43:45 - INFO - 29 of 29 resources collected.
+20:43:45 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:45 - INFO - All done with pad_dom_mdbas_edat-0018. Processing all the resources in this package took 28.65 seconds.
+20:43:45 - INFO - ////////////////////////////////////////////////////////
+10:32:03 - INFO - -------------------------------------------
+10:32:03 - INFO - Sending GET request for list of resources in the p data package...
+10:32:03 - ERROR - Problem with response from server: No response..
+10:32:03 - INFO - Trying again in 4 seconds...
+10:32:07 - ERROR - Out of attempts.
+10:32:07 - ERROR - Couldn't retrieve p package resources.
+10:32:07 - ERROR - Response code: 404
+10:32:07 - INFO - Seconds to response: 0.28
+10:32:07 - INFO - -------------------------------------------
+10:32:07 - INFO - Sending GET request for list of resources in the a data package...
+10:32:08 - ERROR - Problem with response from server: No response..
+10:32:08 - INFO - Trying again in 4 seconds...
+10:32:12 - ERROR - Out of attempts.
+10:32:12 - ERROR - Couldn't retrieve a package resources.
+10:32:12 - ERROR - Response code: 404
+10:32:12 - INFO - Seconds to response: 0.21
+10:32:12 - INFO - -------------------------------------------
+10:32:12 - INFO - Sending GET request for list of resources in the d data package...
+10:32:12 - ERROR - Problem with response from server: No response..
+10:32:12 - INFO - Trying again in 4 seconds...
+10:32:16 - ERROR - Out of attempts.
+10:32:16 - ERROR - Couldn't retrieve d package resources.
+10:32:16 - ERROR - Response code: 404
+10:32:16 - INFO - Seconds to response: 0.22
+10:32:16 - INFO - -------------------------------------------
+10:32:16 - INFO - Sending GET request for list of resources in the _ data package...
+10:32:16 - ERROR - Problem with response from server: No response..
+10:32:16 - INFO - Trying again in 4 seconds...
+10:32:20 - ERROR - Out of attempts.
+10:32:20 - ERROR - Couldn't retrieve _ package resources.
+10:32:20 - ERROR - Response code: 404
+10:32:20 - INFO - Seconds to response: 0.17
+10:32:20 - INFO - -------------------------------------------
+10:32:20 - INFO - Sending GET request for list of resources in the d data package...
+10:32:20 - ERROR - Problem with response from server: No response..
+10:32:20 - INFO - Trying again in 4 seconds...
+10:32:24 - ERROR - Out of attempts.
+10:32:24 - ERROR - Couldn't retrieve d package resources.
+10:32:24 - ERROR - Response code: 404
+10:32:24 - INFO - Seconds to response: 0.17
+10:32:24 - INFO - -------------------------------------------
+10:32:24 - INFO - Sending GET request for list of resources in the o data package...
+10:32:24 - ERROR - Problem with response from server: No response..
+10:32:24 - INFO - Trying again in 4 seconds...
+10:32:28 - ERROR - Out of attempts.
+10:32:28 - ERROR - Couldn't retrieve o package resources.
+10:32:28 - ERROR - Response code: 404
+10:32:28 - INFO - Seconds to response: 0.17
+10:32:28 - INFO - -------------------------------------------
+10:32:28 - INFO - Sending GET request for list of resources in the m data package...
+10:32:29 - ERROR - Problem with response from server: No response..
+10:32:29 - INFO - Trying again in 4 seconds...
+10:32:33 - ERROR - Out of attempts.
+10:32:33 - ERROR - Couldn't retrieve m package resources.
+10:32:33 - ERROR - Response code: 404
+10:32:33 - INFO - Seconds to response: 0.17
+10:32:33 - INFO - -------------------------------------------
+10:32:33 - INFO - Sending GET request for list of resources in the _ data package...
+10:32:33 - ERROR - Problem with response from server: No response..
+10:32:33 - INFO - Trying again in 4 seconds...
+10:32:37 - ERROR - Out of attempts.
+10:32:37 - ERROR - Couldn't retrieve _ package resources.
+10:32:37 - ERROR - Response code: 404
+10:32:37 - INFO - Seconds to response: 0.17
+10:32:37 - INFO - -------------------------------------------
+10:32:37 - INFO - Sending GET request for list of resources in the m data package...
+10:32:37 - ERROR - Problem with response from server: No response..
+10:32:37 - INFO - Trying again in 4 seconds...
+10:32:41 - ERROR - Out of attempts.
+10:32:41 - ERROR - Couldn't retrieve m package resources.
+10:32:41 - ERROR - Response code: 404
+10:32:41 - INFO - Seconds to response: 0.17
+10:32:41 - INFO - -------------------------------------------
+10:32:41 - INFO - Sending GET request for list of resources in the d data package...
+10:32:41 - ERROR - Problem with response from server: No response..
+10:32:41 - INFO - Trying again in 4 seconds...
+10:33:19 - INFO - -------------------------------------------
+10:33:19 - INFO - Sending GET request for list of resources in the [ data package...
+10:33:19 - ERROR - Problem with response from server: No response..
+10:33:19 - INFO - Trying again in 4 seconds...
+10:34:49 - INFO - -------------------------------------------
+10:34:49 - INFO - Sending GET request for list of resources in the p data package...
+10:34:59 - ERROR - There was a problem: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=p (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x799b3c663770>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x799b3c663770>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=p (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x799b3c663770>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/data_functions.py", line 25, in request_resource_library
+    response = requests.get(url, params={'id': package_name}, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=p (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x799b3c663770>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+10:34:59 - ERROR - Problem with response from server: No response..
+10:34:59 - INFO - Trying again in 4 seconds...
+10:35:58 - INFO - -------------------------------------------
+10:35:58 - INFO - Sending GET request for list of resources in the p data package...
+10:38:54 - INFO - -------------------------------------------
+10:38:54 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_tipus-domicili_edat data package...
+10:39:04 - ERROR - There was a problem: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=pad_dom_mdbas_tipus-domicili_edat (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x743835e439e0>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x743835e439e0>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=pad_dom_mdbas_tipus-domicili_edat (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x743835e439e0>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/peter/data_projects/bcn_etl/data_functions.py", line 25, in request_resource_library
+    response = requests.get(url, params={'id': package_name}, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/peter/data_projects/bcn_etl/.venv/lib/python3.12/site-packages/requests/adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='opendata-ajuntament.barcelona.cat', port=443): Max retries exceeded with url: /data/api/action/package_show?id=pad_dom_mdbas_tipus-domicili_edat (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x743835e439e0>, 'Connection to opendata-ajuntament.barcelona.cat timed out. (connect timeout=10)'))
+10:39:04 - ERROR - Problem with response from server: No response..
+10:39:04 - INFO - Trying again in 4 seconds...
+10:39:08 - ERROR - Out of attempts.
+10:39:08 - ERROR - Failed to access the pad_dom_mdbas_tipus-domicili_edat package's resource list, skipping to the next package...
+10:48:10 - INFO - -------------------------------------------
+10:48:10 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_tipus-domicili_edat data package...
+10:48:20 - ERROR - Connection to Open Data BCN timed out while requesting package details for 'pad_dom_mdbas_tipus-domicili_edat'.
+10:48:20 - ERROR - Problem with response from server: No response..
+10:48:20 - INFO - Trying again in 4 seconds...
+10:48:24 - ERROR - Out of attempts.
+10:48:24 - ERROR - Failed to access the pad_dom_mdbas_tipus-domicili_edat package's resource list, skipping to the next package...
+11:05:50 - INFO - -------------------------------------------
+11:05:50 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_tipus-domicili_edat data package...
+11:06:00 - ERROR - Connection to Open Data BCN timed out while requesting package details for 'pad_dom_mdbas_tipus-domicili_edat'.
+11:06:00 - ERROR - Problem with response from server: No response..
+11:06:00 - INFO - Trying again in 4 seconds...
+11:06:04 - ERROR - Out of attempts.
+11:06:04 - ERROR - Failed to access the pad_dom_mdbas_tipus-domicili_edat package's resource list, skipping to the next package...
