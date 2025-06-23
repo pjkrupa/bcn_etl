@@ -145,7 +145,7 @@ def convert_to_csv(
 
     except Exception as e:
         logger.exception(f"There was an error while converting the response into a CSV: {e}")
-        return
+        return None
     
 def save_csv(logger: logging.Logger, 
              resource: dict, 
@@ -192,6 +192,7 @@ def save_csv(logger: logging.Logger,
         return False
 
 
+# Going to use this function eventually to load CSVs into Postgres.
 def to_df(logger: logging.Logger, resource: dict, csv: StringIO) -> pd.DataFrame:
 
     """

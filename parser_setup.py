@@ -12,7 +12,7 @@ def get_parser():
     parser.add_argument(
         '-d',
         '--directory',
-        required=False,
-        help='Directory where you want to save the CSV files',
+        default='.',
+        help='Root directory where you want to save the CSV files',
     )
     return parser

@@ -8,6 +8,7 @@ def compile_reports(report_list: list):
         'resources_fail': [],
         'total_duration': 0,
         'num_errors': 0,
+        'skipped': 0,
     }
 
     for report in report_list:
@@ -19,6 +20,7 @@ def compile_reports(report_list: list):
         final_report['packages_success'].append(report.package_name)
         final_report['resources_success'].extend(report.resources_success)
         final_report['resources_fail'].extend(report.resources_fail)
+        final_report['skipped'] += report.skipped
     return final_report
 
 
@@ -37,6 +39,7 @@ class Report:
         self.start_time = 0
         self.end_time = 0
         self.num_errors = 0
+        self.skipped = 0
 
     def process_package_response(self, response):
         self.total_duration += response.elapsed.total_seconds()

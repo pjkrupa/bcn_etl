@@ -1,4 +1,4 @@
-import logging, requests, time
+import logging, requests, time, os
 from typing import Optional
 from data_functions import download_resource, request_resource_library, token_required, process_resource_library, convert_to_csv, save_csv
 from reporting import Report
@@ -30,6 +30,7 @@ def persistant_request(
     attempts_remaining = max_retries
 
     while attempts_remaining > 0:
+        # This is to check if the function call is for a resource or a package.
         if resource:
             response = download_resource(logger, resource)
         else:
@@ -56,7 +57,10 @@ def persistant_request(
         logger.warning(f"Out of attempts.")
         return response
     
-def main_pipeline(logger: logging.Logger, package: str, directory: str = './') -> dict:
+def main_pipeline(
+        logger: logging.Logger, 
+        package: str, 
+        storage_root: str) -> dict:
     """
     This is the main pipeline for the script. 
     It takes a package name and then attempts to download all the resources in the package.
@@ -102,18 +106,33 @@ def main_pipeline(logger: logging.Logger, package: str, directory: str = './') -
         return report
 
     logger.info(f'Successfully collected details on resources belonging to the {package} data package.')
+    report.package_success = True
     report.num_resources = len(resource_list)
 
     logger.info(f"This package contains a total of {len(resource_list)} resources.")
     logger.info(f"Downloading them now...")
     logger.info("////////////////////////////////////////////////////////")
 
+    # this is to check if the file has already been downloaded
+    save_path = os.path.join(storage_root, package)
+    try: 
+        existing_downloads = os.listdir(save_path)
+    except FileNotFoundError:
+        existing_downloads = []
     for resource in resource_list:
-        get_resource(logger, resource, report)
+        if resource['name'] not in existing_downloads:
+            get_resource(logger, resource, report, storage_root)
+        else:
+            report.skipped += 1
 
     return report
 
-def get_resource(logger: logging.Logger, resource: dict, report: Report, directory: str = "./"):
+def get_resource(
+        logger: logging.Logger, 
+        resource: dict, 
+        report: Report, 
+        storage_root: str
+        ):
     """
     A pipeline function that downloads and saves a single CSV resource and updates the report for the package.
 
@@ -121,6 +140,7 @@ def get_resource(logger: logging.Logger, resource: dict, report: Report, directo
         logger (logging.Logger): A logging instance for recording events.
         resource (dict): A dictionary with all the information on the resource.
         report (Report): A Report object to be updated as the function works.
+        storage_root (str): the root directory where the downloaded CSV files will be saved. Default (from parser) is '.'.
 
     Returns:
         None, but its actions are recorded in the report object.
@@ -154,11 +174,10 @@ def get_resource(logger: logging.Logger, resource: dict, report: Report, directo
         logger.info(f'Response code: {response.status_code}')
         logger.info(f'Seconds to response: {response.elapsed.total_seconds():.2f}')
         report.process_resource_response(response, resource)
-        report.package_success = True
 
     
     csv = convert_to_csv(logger, response)
-    saved = save_csv(logger, resource, csv, path=directory)
+    saved = save_csv(logger, resource, csv, path=storage_root)
 
     if saved:
         logger.info(f"{len(report.resources_success)} of {report.num_resources} resources collected.")
