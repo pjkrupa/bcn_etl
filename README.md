@@ -3,9 +3,12 @@ A simple little tool for downloading datasets from Barcelona's Open Data BCN pla
 
 - [Intro](#intro)
 - [Installation](#installation)
+- [Running the Script](#running-the-script)
 - [Logging](#logging)
+- [Future Development](#future-development)
 
-## Intro: Why?
+
+## Intro
 I was looking at doing a data analysis project using datasets from Barcelona's Open Data BCN platform, but getting the data was quite challenging. The site navigation is slow, downloading through the browser is cumbersome, and the site experiences frequent outages. However, because Open Data BCN uses the CKAN data management system, its API is well documented and easy to navigate. I figured having a reusable script for grabbing data programmatically from Open Data BCN would be nice, so here it is.
 
 Please note that this script is kind of a big gun. It's for when you want to download **all** the resources in a package or series of packages. 
@@ -58,11 +61,11 @@ The script creates a directory for each package in `~/bcn_etl/csv_files` and dow
 17:46:11 - INFO - There were 0 errors.
 ```
 
-## [Logging](#logging)
+## Logging
 
 The script displays logs in the terminal while it is running, but also saves them in the `bcn_etl` directory to `etl.log`, if you want to go back and audit what happened. It appends new logs to the existing file, so if you've run the pipeline a few times and want to start your logging fresh, just delete or rename `etl.log`.
 
-## [Future Development](#future-development)
+## Future Development
 
 I have a lot of little features and tweaks I still need to add to this:
 - I need to add testing, something that's becoming pressing as the code gets more complex
