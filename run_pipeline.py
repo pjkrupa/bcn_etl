@@ -6,15 +6,6 @@ from data_functions import request_resource_library, process_resource_library, d
 from pipeline_functions import persistant_request, main_pipeline
 from reporting import compile_reports
 
-#TODO: make the time logging system more precise, I think it's off
-#TODO: add a README.md
-#TODO: pull out logging so not so much ends up in the terminal
-#TODO: make it so a different log is kept for each run
-#TODO: do some work on the Report class, i think there's too much stuff going on
-
-#package_list = ["pad-dimensions", "pad_cdo_b_barri-des", "pad_dom_mdbas_dones", "pad_dom_mdbas_edat-0018"]
-# pad-dimensions pad_cdo_b_barri-des pad_dom_mdbas_dones pad_dom_mdbas_edat-0018
-#"pad_dom_mdbas_tipus-domicili_edat"
 
 ### 
 # Terminology note: Barcelona's Open Data repository uses the [INSERT HERE] standard. That means it's structured into
