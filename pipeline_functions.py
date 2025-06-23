@@ -110,7 +110,6 @@ def main_pipeline(
     report.num_resources = len(resource_list)
 
     logger.info(f"This package contains a total of {len(resource_list)} resources.")
-    logger.info(f"Downloading them now...")
     logger.info("////////////////////////////////////////////////////////")
 
     # this is to check if the file has already been downloaded

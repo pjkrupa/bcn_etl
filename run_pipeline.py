@@ -6,7 +6,6 @@ from data_functions import request_resource_library, process_resource_library, d
 from pipeline_functions import persistant_request, main_pipeline
 from reporting import compile_reports
 
-#TODO: add logic to check if a resource has already been downloaded
 #TODO: make the time logging system more precise, I think it's off
 #TODO: add a README.md
 #TODO: pull out logging so not so much ends up in the terminal
@@ -57,6 +56,7 @@ if __name__ == "__main__":
     logger.info(f"A total of {len(final_report['packages_success'])} package(s) accessed successfully, out of {total_packages} attempted.")
     logger.info(f"A total of {len(final_report['resources_success'])} resource(s) downloaded and saved successfully, out of {total_resources} attempted.")
     logger.info(f"A total of {final_report['skipped']} resources skipped because they were already downloaded.")
+    logger.info(f"There were {final_report['num_errors']} errors.")
     if final_report['packages_fail']:
         logger.info(f"The following package(s) could not be accessed:")
         for package in final_report['packages_fail']:

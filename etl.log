@@ -6327,3 +6327,38 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='opendata-ajuntamen
 09:41:19 - INFO - A total of 4 package(s) accessed successfully, out of 4 attempted.
 09:41:19 - INFO - A total of 0 resource(s) downloaded and saved successfully, out of 0 attempted.
 09:41:19 - INFO - A total of 87 resources skipped because they were already downloaded.
+09:46:32 - INFO - -------------------------------------------
+09:46:32 - INFO - Sending GET request for list of resources in the pad-dimensions data package...
+09:46:32 - INFO - Response code: 200
+09:46:32 - INFO - Seconds to response: 0.25
+09:46:32 - INFO - Successfully collected details on resources belonging to the pad-dimensions data package.
+09:46:32 - INFO - This package contains a total of 1 resources.
+09:46:32 - INFO - ////////////////////////////////////////////////////////
+09:46:32 - INFO - -------------------------------------------
+09:46:32 - INFO - Sending GET request for list of resources in the pad_cdo_b_barri-des data package...
+09:46:34 - INFO - Response code: 200
+09:46:34 - INFO - Seconds to response: 2.12
+09:46:34 - INFO - Successfully collected details on resources belonging to the pad_cdo_b_barri-des data package.
+09:46:34 - INFO - This package contains a total of 28 resources.
+09:46:34 - INFO - ////////////////////////////////////////////////////////
+09:46:34 - INFO - -------------------------------------------
+09:46:34 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_dones data package...
+09:46:36 - INFO - Response code: 200
+09:46:36 - INFO - Seconds to response: 1.96
+09:46:36 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_dones data package.
+09:46:36 - INFO - This package contains a total of 29 resources.
+09:46:36 - INFO - ////////////////////////////////////////////////////////
+09:46:36 - INFO - -------------------------------------------
+09:46:36 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_edat-0018 data package...
+09:46:38 - INFO - Response code: 200
+09:46:38 - INFO - Seconds to response: 2.01
+09:46:38 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_edat-0018 data package.
+09:46:38 - INFO - This package contains a total of 29 resources.
+09:46:38 - INFO - ////////////////////////////////////////////////////////
+09:46:38 - INFO - ***************************************************
+09:46:38 - INFO - FINAL REPORT
+09:46:38 - INFO - This pipeline ran for 0:00:06.
+09:46:38 - INFO - A total of 4 package(s) accessed successfully, out of 4 attempted.
+09:46:38 - INFO - A total of 0 resource(s) downloaded and saved successfully, out of 0 attempted.
+09:46:38 - INFO - A total of 87 resources skipped because they were already downloaded.
+09:46:38 - INFO - There were 0 errors.
