@@ -5,6 +5,9 @@ from parser_setup import get_parser
 from data_functions import request_resource_library, process_resource_library, download_resource, convert_to_csv, save_csv, to_df, token_required
 from pipeline_functions import persistant_request, main_pipeline
 from reporting import compile_reports
+from db_load import Database
+import os
+from dotenv import load_dotenv
 
 
 ### 
@@ -15,6 +18,17 @@ from reporting import compile_reports
 # So, when this code uses the term "package", it is referring to a collection of datasets, and when it uses the term
 # "resource", it is referring to a dictionary containing information about an individual dataset, including the URL 
 # for downloading the dataset in the form of a CSV.
+
+# get .env variables and instantiate database class
+load_dotenv()
+db_config = Database(
+    db_name = os.getenv("DB_NAME"),
+    db_host = os.getenv("DB_HOST"),
+    db_user = os.getenv("DB_USER")
+)
+
+
+
 
 parser = get_parser()
 args = parser.parse_args()

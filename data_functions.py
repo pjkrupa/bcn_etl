@@ -60,7 +60,7 @@ def process_resource_library(
         return None
     csv_resources = []
     for res in resources:
-        if res['name'].lower().endswith('.csv'):
+        if res['format'] == "CSV":
             #The original resource dictionary doesn't include the package name, so this adds it to each resource dict
             res['package_name'] = package
             csv_resources.append(res)

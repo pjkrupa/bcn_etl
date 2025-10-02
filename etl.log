@@ -6362,495 +6362,73 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='opendata-ajuntamen
 09:46:38 - INFO - A total of 0 resource(s) downloaded and saved successfully, out of 0 attempted.
 09:46:38 - INFO - A total of 87 resources skipped because they were already downloaded.
 09:46:38 - INFO - There were 0 errors.
-17:45:12 - INFO - -------------------------------------------
-17:45:12 - INFO - Sending GET request for list of resources in the pad-dimensions data package...
-17:45:12 - INFO - Response code: 200
-17:45:12 - INFO - Seconds to response: 0.33
-17:45:12 - INFO - Successfully collected details on resources belonging to the pad-dimensions data package.
-17:45:12 - INFO - This package contains a total of 1 resources.
-17:45:12 - INFO - ////////////////////////////////////////////////////////
-17:45:12 - INFO - Sending a request for pad_dimensions.csv.
-17:45:13 - INFO - Response code: 200
-17:45:13 - INFO - Seconds to response: 0.10
-17:45:13 - INFO - Successfully converted response object to a CSV file.
-17:45:13 - INFO - Saving CSV to disk...
-17:45:13 - INFO - Succesfully saved CSV file to csv_files/pad-dimensions/pad_dimensions.csv.
-17:45:13 - INFO - 1 of 1 resources collected.
-17:45:13 - INFO - ■
-17:45:13 - INFO - -------------------------------------------
-17:45:13 - INFO - Sending GET request for list of resources in the pad_cdo_b_barri-des data package...
-17:45:14 - INFO - Response code: 200
-17:45:14 - INFO - Seconds to response: 1.70
-17:45:14 - INFO - Successfully collected details on resources belonging to the pad_cdo_b_barri-des data package.
-17:45:14 - INFO - This package contains a total of 28 resources.
-17:45:14 - INFO - ////////////////////////////////////////////////////////
-17:45:14 - INFO - Sending a request for 2024_pad_cdo_b_barri-des.csv.
-17:45:15 - INFO - Response code: 200
-17:45:15 - INFO - Seconds to response: 0.13
-17:45:15 - INFO - Successfully converted response object to a CSV file.
-17:45:15 - INFO - Saving CSV to disk...
-17:45:15 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2024_pad_cdo_b_barri-des.csv.
-17:45:15 - INFO - 1 of 28 resources collected.
-17:45:15 - INFO - ■
-17:45:15 - INFO - Sending a request for 2023_pad_cdo_b_barri-des.csv.
-17:45:16 - INFO - Response code: 200
-17:45:16 - INFO - Seconds to response: 0.10
-17:45:16 - INFO - Successfully converted response object to a CSV file.
-17:45:16 - INFO - Saving CSV to disk...
-17:45:16 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2023_pad_cdo_b_barri-des.csv.
-17:45:16 - INFO - 2 of 28 resources collected.
-17:45:16 - INFO - ■■
-17:45:16 - INFO - Sending a request for 2022_pad_cdo_b_barri-des.csv.
-17:45:17 - INFO - Response code: 200
-17:45:17 - INFO - Seconds to response: 0.10
-17:45:17 - INFO - Successfully converted response object to a CSV file.
-17:45:17 - INFO - Saving CSV to disk...
-17:45:17 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2022_pad_cdo_b_barri-des.csv.
-17:45:17 - INFO - 3 of 28 resources collected.
-17:45:17 - INFO - ■■■
-17:45:17 - INFO - Sending a request for 2021_pad_cdo_b_barri-des.csv.
-17:45:18 - INFO - Response code: 200
-17:45:18 - INFO - Seconds to response: 0.10
-17:45:18 - INFO - Successfully converted response object to a CSV file.
-17:45:18 - INFO - Saving CSV to disk...
-17:45:18 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2021_pad_cdo_b_barri-des.csv.
-17:45:18 - INFO - 4 of 28 resources collected.
-17:45:18 - INFO - ■■■■
-17:45:18 - INFO - Sending a request for 2020_pad_cdo_b_barri-des.csv.
-17:45:19 - INFO - Response code: 200
-17:45:19 - INFO - Seconds to response: 0.10
-17:45:19 - INFO - Successfully converted response object to a CSV file.
-17:45:19 - INFO - Saving CSV to disk...
-17:45:19 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2020_pad_cdo_b_barri-des.csv.
-17:45:19 - INFO - 5 of 28 resources collected.
-17:45:19 - INFO - ■■■■■
-17:45:19 - INFO - Sending a request for 2019_pad_cdo_b_barri-des.csv.
-17:45:20 - INFO - Response code: 200
-17:45:20 - INFO - Seconds to response: 0.10
-17:45:20 - INFO - Successfully converted response object to a CSV file.
-17:45:20 - INFO - Saving CSV to disk...
-17:45:20 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2019_pad_cdo_b_barri-des.csv.
-17:45:20 - INFO - 6 of 28 resources collected.
-17:45:20 - INFO - ■■■■■■
-17:45:20 - INFO - Sending a request for 2018_pad_cdo_b_barri-des.csv.
-17:45:21 - INFO - Response code: 200
-17:45:21 - INFO - Seconds to response: 0.10
-17:45:21 - INFO - Successfully converted response object to a CSV file.
-17:45:21 - INFO - Saving CSV to disk...
-17:45:21 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2018_pad_cdo_b_barri-des.csv.
-17:45:21 - INFO - 7 of 28 resources collected.
-17:45:21 - INFO - ■■■■■■■
-17:45:21 - INFO - Sending a request for 2017_pad_cdo_b_barri-des.csv.
-17:45:22 - INFO - Response code: 200
-17:45:22 - INFO - Seconds to response: 0.10
-17:45:22 - INFO - Successfully converted response object to a CSV file.
-17:45:22 - INFO - Saving CSV to disk...
-17:45:22 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2017_pad_cdo_b_barri-des.csv.
-17:45:22 - INFO - 8 of 28 resources collected.
-17:45:22 - INFO - ■■■■■■■■
-17:45:22 - INFO - Sending a request for 2016_pad_cdo_b_barri-des.csv.
-17:45:23 - INFO - Response code: 200
-17:45:23 - INFO - Seconds to response: 0.10
-17:45:23 - INFO - Successfully converted response object to a CSV file.
-17:45:23 - INFO - Saving CSV to disk...
-17:45:23 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2016_pad_cdo_b_barri-des.csv.
-17:45:23 - INFO - 9 of 28 resources collected.
-17:45:23 - INFO - ■■■■■■■■■
-17:45:23 - INFO - Sending a request for 2015_pad_cdo_b_barri-des.csv.
-17:45:24 - INFO - Response code: 200
-17:45:24 - INFO - Seconds to response: 0.10
-17:45:24 - INFO - Successfully converted response object to a CSV file.
-17:45:24 - INFO - Saving CSV to disk...
-17:45:24 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2015_pad_cdo_b_barri-des.csv.
-17:45:24 - INFO - 10 of 28 resources collected.
-17:45:24 - INFO - ■■■■■■■■■■
-17:45:24 - INFO - Sending a request for 2014_pad_cdo_b_barri-des.csv.
-17:45:25 - INFO - Response code: 200
-17:45:25 - INFO - Seconds to response: 0.13
-17:45:25 - INFO - Successfully converted response object to a CSV file.
-17:45:25 - INFO - Saving CSV to disk...
-17:45:25 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2014_pad_cdo_b_barri-des.csv.
-17:45:25 - INFO - 11 of 28 resources collected.
-17:45:25 - INFO - ■■■■■■■■■■■
-17:45:25 - INFO - Sending a request for 2013_pad_cdo_b_barri-des.csv.
-17:45:26 - INFO - Response code: 200
-17:45:26 - INFO - Seconds to response: 0.10
-17:45:26 - INFO - Successfully converted response object to a CSV file.
-17:45:26 - INFO - Saving CSV to disk...
-17:45:26 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2013_pad_cdo_b_barri-des.csv.
-17:45:26 - INFO - 12 of 28 resources collected.
-17:45:26 - INFO - ■■■■■■■■■■■■
-17:45:26 - INFO - Sending a request for 2012_pad_cdo_b_barri-des.csv.
-17:45:27 - INFO - Response code: 200
-17:45:27 - INFO - Seconds to response: 0.10
-17:45:27 - INFO - Successfully converted response object to a CSV file.
-17:45:27 - INFO - Saving CSV to disk...
-17:45:27 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2012_pad_cdo_b_barri-des.csv.
-17:45:27 - INFO - 13 of 28 resources collected.
-17:45:27 - INFO - ■■■■■■■■■■■■■
-17:45:27 - INFO - Sending a request for 2011_pad_cdo_b_barri-des.csv.
-17:45:28 - INFO - Response code: 200
-17:45:28 - INFO - Seconds to response: 0.11
-17:45:28 - INFO - Successfully converted response object to a CSV file.
-17:45:28 - INFO - Saving CSV to disk...
-17:45:28 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2011_pad_cdo_b_barri-des.csv.
-17:45:28 - INFO - 14 of 28 resources collected.
-17:45:28 - INFO - ■■■■■■■■■■■■■■
-17:45:28 - INFO - Sending a request for 2010_pad_cdo_b_barri-des.csv.
-17:45:29 - INFO - Response code: 200
-17:45:29 - INFO - Seconds to response: 0.10
-17:45:29 - INFO - Successfully converted response object to a CSV file.
-17:45:29 - INFO - Saving CSV to disk...
-17:45:29 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2010_pad_cdo_b_barri-des.csv.
-17:45:29 - INFO - 15 of 28 resources collected.
-17:45:29 - INFO - ■■■■■■■■■■■■■■■
-17:45:29 - INFO - Sending a request for 2009_pad_cdo_b_barri-des.csv.
-17:45:30 - INFO - Response code: 200
-17:45:30 - INFO - Seconds to response: 0.13
-17:45:30 - INFO - Successfully converted response object to a CSV file.
-17:45:30 - INFO - Saving CSV to disk...
-17:45:30 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2009_pad_cdo_b_barri-des.csv.
-17:45:30 - INFO - 16 of 28 resources collected.
-17:45:30 - INFO - ■■■■■■■■■■■■■■■■
-17:45:30 - INFO - Sending a request for 2008_pad_cdo_b_barri-des.csv.
-17:45:31 - INFO - Response code: 200
-17:45:31 - INFO - Seconds to response: 0.10
-17:45:31 - INFO - Successfully converted response object to a CSV file.
-17:45:31 - INFO - Saving CSV to disk...
-17:45:31 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2008_pad_cdo_b_barri-des.csv.
-17:45:31 - INFO - 17 of 28 resources collected.
-17:45:31 - INFO - ■■■■■■■■■■■■■■■■■
-17:45:31 - INFO - Sending a request for 2007_pad_cdo_b_barri-des.csv.
-17:45:32 - INFO - Response code: 200
-17:45:32 - INFO - Seconds to response: 0.10
-17:45:32 - INFO - Successfully converted response object to a CSV file.
-17:45:32 - INFO - Saving CSV to disk...
-17:45:32 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2007_pad_cdo_b_barri-des.csv.
-17:45:32 - INFO - 18 of 28 resources collected.
-17:45:32 - INFO - ■■■■■■■■■■■■■■■■■■
-17:45:32 - INFO - Sending a request for 2006_pad_cdo_b_barri-des.csv.
-17:45:33 - INFO - Response code: 200
-17:45:33 - INFO - Seconds to response: 0.10
-17:45:33 - INFO - Successfully converted response object to a CSV file.
-17:45:33 - INFO - Saving CSV to disk...
-17:45:33 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2006_pad_cdo_b_barri-des.csv.
-17:45:33 - INFO - 19 of 28 resources collected.
-17:45:33 - INFO - ■■■■■■■■■■■■■■■■■■■
-17:45:33 - INFO - Sending a request for 2005_pad_cdo_b_barri-des.csv.
-17:45:34 - INFO - Response code: 200
-17:45:34 - INFO - Seconds to response: 0.10
-17:45:34 - INFO - Successfully converted response object to a CSV file.
-17:45:34 - INFO - Saving CSV to disk...
-17:45:34 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2005_pad_cdo_b_barri-des.csv.
-17:45:34 - INFO - 20 of 28 resources collected.
-17:45:34 - INFO - ■■■■■■■■■■■■■■■■■■■■
-17:45:34 - INFO - Sending a request for 2004_pad_cdo_b_barri-des.csv.
-17:45:35 - INFO - Response code: 200
-17:45:35 - INFO - Seconds to response: 0.10
-17:45:35 - INFO - Successfully converted response object to a CSV file.
-17:45:35 - INFO - Saving CSV to disk...
-17:45:35 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2004_pad_cdo_b_barri-des.csv.
-17:45:35 - INFO - 21 of 28 resources collected.
-17:45:35 - INFO - ■■■■■■■■■■■■■■■■■■■■■
-17:45:35 - INFO - Sending a request for 2003_pad_cdo_b_barri-des.csv.
-17:45:36 - INFO - Response code: 200
-17:45:36 - INFO - Seconds to response: 0.10
-17:45:36 - INFO - Successfully converted response object to a CSV file.
-17:45:36 - INFO - Saving CSV to disk...
-17:45:36 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2003_pad_cdo_b_barri-des.csv.
-17:45:36 - INFO - 22 of 28 resources collected.
-17:45:36 - INFO - ■■■■■■■■■■■■■■■■■■■■■■
-17:45:36 - INFO - Sending a request for 2002_pad_cdo_b_barri-des.csv.
-17:45:37 - INFO - Response code: 200
-17:45:37 - INFO - Seconds to response: 0.10
-17:45:37 - INFO - Successfully converted response object to a CSV file.
-17:45:37 - INFO - Saving CSV to disk...
-17:45:37 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2002_pad_cdo_b_barri-des.csv.
-17:45:37 - INFO - 23 of 28 resources collected.
-17:45:37 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■
-17:45:37 - INFO - Sending a request for 2001_pad_cdo_b_barri-des.csv.
-17:45:38 - INFO - Response code: 200
-17:45:38 - INFO - Seconds to response: 0.10
-17:45:38 - INFO - Successfully converted response object to a CSV file.
-17:45:38 - INFO - Saving CSV to disk...
-17:45:38 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2001_pad_cdo_b_barri-des.csv.
-17:45:38 - INFO - 24 of 28 resources collected.
-17:45:38 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■
-17:45:38 - INFO - Sending a request for 2000_pad_cdo_b_barri-des.csv.
-17:45:39 - INFO - Response code: 200
-17:45:39 - INFO - Seconds to response: 0.10
-17:45:39 - INFO - Successfully converted response object to a CSV file.
-17:45:39 - INFO - Saving CSV to disk...
-17:45:39 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/2000_pad_cdo_b_barri-des.csv.
-17:45:39 - INFO - 25 of 28 resources collected.
-17:45:39 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■
-17:45:39 - INFO - Sending a request for 1999_pad_cdo_b_barri-des.csv.
-17:45:40 - INFO - Response code: 200
-17:45:40 - INFO - Seconds to response: 0.10
-17:45:40 - INFO - Successfully converted response object to a CSV file.
-17:45:40 - INFO - Saving CSV to disk...
-17:45:40 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/1999_pad_cdo_b_barri-des.csv.
-17:45:40 - INFO - 26 of 28 resources collected.
-17:45:40 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:45:40 - INFO - Sending a request for 1998_pad_cdo_b_barri-des.csv.
-17:45:41 - INFO - Response code: 200
-17:45:41 - INFO - Seconds to response: 0.11
-17:45:41 - INFO - Successfully converted response object to a CSV file.
-17:45:41 - INFO - Saving CSV to disk...
-17:45:41 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/1998_pad_cdo_b_barri-des.csv.
-17:45:41 - INFO - 27 of 28 resources collected.
-17:45:41 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:45:41 - INFO - Sending a request for 1997_pad_cdo_b_barri-des.csv.
-17:45:42 - INFO - Response code: 200
-17:45:42 - INFO - Seconds to response: 0.11
-17:45:42 - INFO - Successfully converted response object to a CSV file.
-17:45:42 - INFO - Saving CSV to disk...
-17:45:42 - INFO - Succesfully saved CSV file to csv_files/pad_cdo_b_barri-des/1997_pad_cdo_b_barri-des.csv.
-17:45:42 - INFO - 28 of 28 resources collected.
-17:45:42 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:45:42 - INFO - -------------------------------------------
-17:45:42 - INFO - Sending GET request for list of resources in the pad_dom_mdbas_dones data package...
-17:45:42 - INFO - Response code: 200
-17:45:42 - INFO - Seconds to response: 0.44
-17:45:42 - INFO - Successfully collected details on resources belonging to the pad_dom_mdbas_dones data package.
-17:45:42 - INFO - This package contains a total of 29 resources.
-17:45:42 - INFO - ////////////////////////////////////////////////////////
-17:45:42 - INFO - Sending a request for 2025_pad_dom_mdbas_dones.csv.
-17:45:43 - INFO - Response code: 200
-17:45:43 - INFO - Seconds to response: 0.10
-17:45:43 - INFO - Successfully converted response object to a CSV file.
-17:45:43 - INFO - Saving CSV to disk...
-17:45:43 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2025_pad_dom_mdbas_dones.csv.
-17:45:43 - INFO - 1 of 29 resources collected.
-17:45:43 - INFO - ■
-17:45:43 - INFO - Sending a request for 2024_pad_dom_mdbas_dones.csv.
-17:45:44 - INFO - Response code: 200
-17:45:44 - INFO - Seconds to response: 0.11
-17:45:44 - INFO - Successfully converted response object to a CSV file.
-17:45:44 - INFO - Saving CSV to disk...
-17:45:44 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2024_pad_dom_mdbas_dones.csv.
-17:45:44 - INFO - 2 of 29 resources collected.
-17:45:44 - INFO - ■■
-17:45:44 - INFO - Sending a request for 2023_pad_dom_mdbas_dones.csv.
-17:45:45 - INFO - Response code: 200
-17:45:45 - INFO - Seconds to response: 0.10
-17:45:45 - INFO - Successfully converted response object to a CSV file.
-17:45:45 - INFO - Saving CSV to disk...
-17:45:45 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2023_pad_dom_mdbas_dones.csv.
-17:45:45 - INFO - 3 of 29 resources collected.
-17:45:45 - INFO - ■■■
-17:45:45 - INFO - Sending a request for 2022_pad_dom_mdbas_dones.csv.
-17:45:46 - INFO - Response code: 200
-17:45:46 - INFO - Seconds to response: 0.10
-17:45:46 - INFO - Successfully converted response object to a CSV file.
-17:45:46 - INFO - Saving CSV to disk...
-17:45:46 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2022_pad_dom_mdbas_dones.csv.
-17:45:46 - INFO - 4 of 29 resources collected.
-17:45:46 - INFO - ■■■■
-17:45:46 - INFO - Sending a request for 2021_pad_dom_mdbas_dones.csv.
-17:45:47 - INFO - Response code: 200
-17:45:47 - INFO - Seconds to response: 0.11
-17:45:47 - INFO - Successfully converted response object to a CSV file.
-17:45:47 - INFO - Saving CSV to disk...
-17:45:47 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2021_pad_dom_mdbas_dones.csv.
-17:45:47 - INFO - 5 of 29 resources collected.
-17:45:47 - INFO - ■■■■■
-17:45:47 - INFO - Sending a request for 2020_pad_dom_mdbas_dones.csv.
-17:45:48 - INFO - Response code: 200
-17:45:48 - INFO - Seconds to response: 0.10
-17:45:48 - INFO - Successfully converted response object to a CSV file.
-17:45:48 - INFO - Saving CSV to disk...
-17:45:48 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2020_pad_dom_mdbas_dones.csv.
-17:45:48 - INFO - 6 of 29 resources collected.
-17:45:48 - INFO - ■■■■■■
-17:45:48 - INFO - Sending a request for 2019_pad_dom_mdbas_dones.csv.
-17:45:49 - INFO - Response code: 200
-17:45:49 - INFO - Seconds to response: 0.10
-17:45:49 - INFO - Successfully converted response object to a CSV file.
-17:45:49 - INFO - Saving CSV to disk...
-17:45:49 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2019_pad_dom_mdbas_dones.csv.
-17:45:49 - INFO - 7 of 29 resources collected.
-17:45:49 - INFO - ■■■■■■■
-17:45:49 - INFO - Sending a request for 2018_pad_dom_mdbas_dones.csv.
-17:45:50 - INFO - Response code: 200
-17:45:50 - INFO - Seconds to response: 0.10
-17:45:50 - INFO - Successfully converted response object to a CSV file.
-17:45:50 - INFO - Saving CSV to disk...
-17:45:50 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2018_pad_dom_mdbas_dones.csv.
-17:45:50 - INFO - 8 of 29 resources collected.
-17:45:50 - INFO - ■■■■■■■■
-17:45:50 - INFO - Sending a request for 2017_pad_dom_mdbas_dones.csv.
-17:45:51 - INFO - Response code: 200
-17:45:51 - INFO - Seconds to response: 0.10
-17:45:51 - INFO - Successfully converted response object to a CSV file.
-17:45:51 - INFO - Saving CSV to disk...
-17:45:51 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2017_pad_dom_mdbas_dones.csv.
-17:45:51 - INFO - 9 of 29 resources collected.
-17:45:51 - INFO - ■■■■■■■■■
-17:45:51 - INFO - Sending a request for 2016_pad_dom_mdbas_dones.csv.
-17:45:52 - INFO - Response code: 200
-17:45:52 - INFO - Seconds to response: 0.10
-17:45:52 - INFO - Successfully converted response object to a CSV file.
-17:45:52 - INFO - Saving CSV to disk...
-17:45:52 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2016_pad_dom_mdbas_dones.csv.
-17:45:52 - INFO - 10 of 29 resources collected.
-17:45:52 - INFO - ■■■■■■■■■■
-17:45:52 - INFO - Sending a request for 2015_pad_dom_mdbas_dones.csv.
-17:45:53 - INFO - Response code: 200
-17:45:53 - INFO - Seconds to response: 0.10
-17:45:53 - INFO - Successfully converted response object to a CSV file.
-17:45:53 - INFO - Saving CSV to disk...
-17:45:53 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2015_pad_dom_mdbas_dones.csv.
-17:45:53 - INFO - 11 of 29 resources collected.
-17:45:53 - INFO - ■■■■■■■■■■■
-17:45:53 - INFO - Sending a request for 2014_pad_dom_mdbas_dones.csv.
-17:45:54 - INFO - Response code: 200
-17:45:54 - INFO - Seconds to response: 0.10
-17:45:54 - INFO - Successfully converted response object to a CSV file.
-17:45:54 - INFO - Saving CSV to disk...
-17:45:54 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2014_pad_dom_mdbas_dones.csv.
-17:45:54 - INFO - 12 of 29 resources collected.
-17:45:54 - INFO - ■■■■■■■■■■■■
-17:45:54 - INFO - Sending a request for 2013_pad_dom_mdbas_dones.csv.
-17:45:55 - INFO - Response code: 200
-17:45:55 - INFO - Seconds to response: 0.11
-17:45:55 - INFO - Successfully converted response object to a CSV file.
-17:45:55 - INFO - Saving CSV to disk...
-17:45:55 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2013_pad_dom_mdbas_dones.csv.
-17:45:55 - INFO - 13 of 29 resources collected.
-17:45:55 - INFO - ■■■■■■■■■■■■■
-17:45:55 - INFO - Sending a request for 2012_pad_dom_mdbas_dones.csv.
-17:45:56 - INFO - Response code: 200
-17:45:56 - INFO - Seconds to response: 0.10
-17:45:56 - INFO - Successfully converted response object to a CSV file.
-17:45:56 - INFO - Saving CSV to disk...
-17:45:56 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2012_pad_dom_mdbas_dones.csv.
-17:45:56 - INFO - 14 of 29 resources collected.
-17:45:56 - INFO - ■■■■■■■■■■■■■■
-17:45:56 - INFO - Sending a request for 2011_pad_dom_mdbas_dones.csv.
-17:45:57 - INFO - Response code: 200
-17:45:57 - INFO - Seconds to response: 0.10
-17:45:57 - INFO - Successfully converted response object to a CSV file.
-17:45:57 - INFO - Saving CSV to disk...
-17:45:57 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2011_pad_dom_mdbas_dones.csv.
-17:45:57 - INFO - 15 of 29 resources collected.
-17:45:57 - INFO - ■■■■■■■■■■■■■■■
-17:45:57 - INFO - Sending a request for 2010_pad_dom_mdbas_dones.csv.
-17:45:58 - INFO - Response code: 200
-17:45:58 - INFO - Seconds to response: 0.13
-17:45:58 - INFO - Successfully converted response object to a CSV file.
-17:45:58 - INFO - Saving CSV to disk...
-17:45:58 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2010_pad_dom_mdbas_dones.csv.
-17:45:58 - INFO - 16 of 29 resources collected.
-17:45:58 - INFO - ■■■■■■■■■■■■■■■■
-17:45:58 - INFO - Sending a request for 2009_pad_dom_mdbas_dones.csv.
-17:45:59 - INFO - Response code: 200
-17:45:59 - INFO - Seconds to response: 0.10
-17:45:59 - INFO - Successfully converted response object to a CSV file.
-17:45:59 - INFO - Saving CSV to disk...
-17:45:59 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2009_pad_dom_mdbas_dones.csv.
-17:45:59 - INFO - 17 of 29 resources collected.
-17:45:59 - INFO - ■■■■■■■■■■■■■■■■■
-17:45:59 - INFO - Sending a request for 2008_pad_dom_mdbas_dones.csv.
-17:46:00 - INFO - Response code: 200
-17:46:00 - INFO - Seconds to response: 0.11
-17:46:00 - INFO - Successfully converted response object to a CSV file.
-17:46:00 - INFO - Saving CSV to disk...
-17:46:00 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2008_pad_dom_mdbas_dones.csv.
-17:46:00 - INFO - 18 of 29 resources collected.
-17:46:00 - INFO - ■■■■■■■■■■■■■■■■■■
-17:46:00 - INFO - Sending a request for 2007_pad_dom_mdbas_dones.csv.
-17:46:01 - INFO - Response code: 200
-17:46:01 - INFO - Seconds to response: 0.10
-17:46:01 - INFO - Successfully converted response object to a CSV file.
-17:46:01 - INFO - Saving CSV to disk...
-17:46:01 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2007_pad_dom_mdbas_dones.csv.
-17:46:01 - INFO - 19 of 29 resources collected.
-17:46:01 - INFO - ■■■■■■■■■■■■■■■■■■■
-17:46:01 - INFO - Sending a request for 2006_pad_dom_mdbas_dones.csv.
-17:46:02 - INFO - Response code: 200
-17:46:02 - INFO - Seconds to response: 0.11
-17:46:02 - INFO - Successfully converted response object to a CSV file.
-17:46:02 - INFO - Saving CSV to disk...
-17:46:02 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2006_pad_dom_mdbas_dones.csv.
-17:46:02 - INFO - 20 of 29 resources collected.
-17:46:02 - INFO - ■■■■■■■■■■■■■■■■■■■■
-17:46:02 - INFO - Sending a request for 2005_pad_dom_mdbas_dones.csv.
-17:46:03 - INFO - Response code: 200
-17:46:03 - INFO - Seconds to response: 0.10
-17:46:03 - INFO - Successfully converted response object to a CSV file.
-17:46:03 - INFO - Saving CSV to disk...
-17:46:03 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2005_pad_dom_mdbas_dones.csv.
-17:46:03 - INFO - 21 of 29 resources collected.
-17:46:03 - INFO - ■■■■■■■■■■■■■■■■■■■■■
-17:46:03 - INFO - Sending a request for 2004_pad_dom_mdbas_dones.csv.
-17:46:04 - INFO - Response code: 200
-17:46:04 - INFO - Seconds to response: 0.10
-17:46:04 - INFO - Successfully converted response object to a CSV file.
-17:46:04 - INFO - Saving CSV to disk...
-17:46:04 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2004_pad_dom_mdbas_dones.csv.
-17:46:04 - INFO - 22 of 29 resources collected.
-17:46:04 - INFO - ■■■■■■■■■■■■■■■■■■■■■■
-17:46:04 - INFO - Sending a request for 2003_pad_dom_mdbas_dones.csv.
-17:46:05 - INFO - Response code: 200
-17:46:05 - INFO - Seconds to response: 0.10
-17:46:05 - INFO - Successfully converted response object to a CSV file.
-17:46:05 - INFO - Saving CSV to disk...
-17:46:05 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2003_pad_dom_mdbas_dones.csv.
-17:46:05 - INFO - 23 of 29 resources collected.
-17:46:05 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■
-17:46:05 - INFO - Sending a request for 2002_pad_dom_mdbas_dones.csv.
-17:46:06 - INFO - Response code: 200
-17:46:06 - INFO - Seconds to response: 0.10
-17:46:06 - INFO - Successfully converted response object to a CSV file.
-17:46:06 - INFO - Saving CSV to disk...
-17:46:06 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2002_pad_dom_mdbas_dones.csv.
-17:46:06 - INFO - 24 of 29 resources collected.
-17:46:06 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:06 - INFO - Sending a request for 2001_pad_dom_mdbas_dones.csv.
-17:46:07 - INFO - Response code: 200
-17:46:07 - INFO - Seconds to response: 0.10
-17:46:07 - INFO - Successfully converted response object to a CSV file.
-17:46:07 - INFO - Saving CSV to disk...
-17:46:07 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2001_pad_dom_mdbas_dones.csv.
-17:46:07 - INFO - 25 of 29 resources collected.
-17:46:07 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:07 - INFO - Sending a request for 2000_pad_dom_mdbas_dones.csv.
-17:46:08 - INFO - Response code: 200
-17:46:08 - INFO - Seconds to response: 0.12
-17:46:08 - INFO - Successfully converted response object to a CSV file.
-17:46:08 - INFO - Saving CSV to disk...
-17:46:08 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/2000_pad_dom_mdbas_dones.csv.
-17:46:08 - INFO - 26 of 29 resources collected.
-17:46:08 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:08 - INFO - Sending a request for 1999_pad_dom_mdbas_dones.csv.
-17:46:09 - INFO - Response code: 200
-17:46:09 - INFO - Seconds to response: 0.11
-17:46:09 - INFO - Successfully converted response object to a CSV file.
-17:46:09 - INFO - Saving CSV to disk...
-17:46:09 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/1999_pad_dom_mdbas_dones.csv.
-17:46:09 - INFO - 27 of 29 resources collected.
-17:46:09 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:09 - INFO - Sending a request for 1998_pad_dom_mdbas_dones.csv.
-17:46:10 - INFO - Response code: 200
-17:46:10 - INFO - Seconds to response: 0.11
-17:46:10 - INFO - Successfully converted response object to a CSV file.
-17:46:10 - INFO - Saving CSV to disk...
-17:46:10 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/1998_pad_dom_mdbas_dones.csv.
-17:46:10 - INFO - 28 of 29 resources collected.
-17:46:10 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:10 - INFO - Sending a request for 1997_pad_dom_mdbas_dones.csv.
-17:46:11 - INFO - Response code: 200
-17:46:11 - INFO - Seconds to response: 0.11
-17:46:11 - INFO - Successfully converted response object to a CSV file.
-17:46:11 - INFO - Saving CSV to disk...
-17:46:11 - INFO - Succesfully saved CSV file to csv_files/pad_dom_mdbas_dones/1997_pad_dom_mdbas_dones.csv.
-17:46:11 - INFO - 29 of 29 resources collected.
-17:46:11 - INFO - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-17:46:11 - INFO - ***************************************************
-17:46:11 - INFO - FINAL REPORT
-17:46:11 - INFO - This pipeline ran for 0:00:59.
-17:46:11 - INFO - A total of 3 package(s) accessed successfully, out of 3 attempted.
-17:46:11 - INFO - A total of 58 resource(s) downloaded and saved successfully, out of 58 attempted.
-17:46:11 - INFO - A total of 0 resources skipped because they were already downloaded.
-17:46:11 - INFO - There were 0 errors.
+14:42:34 - INFO - -------------------------------------------
+14:42:34 - INFO - Sending GET request for list of resources in the consum-electricitat-bcn data package...
+14:42:34 - INFO - Response code: 200
+14:42:34 - INFO - Seconds to response: 0.21
+14:42:34 - INFO - Successfully collected details on resources belonging to the consum-electricitat-bcn data package.
+14:42:34 - INFO - This package contains a total of 7 resources.
+14:42:34 - INFO - ////////////////////////////////////////////////////////
+14:42:34 - INFO - Sending a request for 2025_consum_electricitat_BCN.csv.
+14:42:34 - INFO - Response code: 200
+14:42:34 - INFO - Seconds to response: 0.07
+14:42:34 - INFO - Successfully converted response object to a CSV file.
+14:42:34 - INFO - Saving CSV to disk...
+14:42:35 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2025_consum_electricitat_BCN.csv.
+14:42:35 - INFO - 1 of 7 resources collected.
+14:42:35 - INFO - ■
+14:42:35 - INFO - Sending a request for 2024_consum_electricitat_bcn.csv.
+14:42:36 - INFO - Response code: 200
+14:42:36 - INFO - Seconds to response: 0.09
+14:42:36 - INFO - Successfully converted response object to a CSV file.
+14:42:36 - INFO - Saving CSV to disk...
+14:42:36 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2024_consum_electricitat_bcn.csv.
+14:42:36 - INFO - 2 of 7 resources collected.
+14:42:36 - INFO - ■■
+14:42:36 - INFO - Sending a request for 2023_consum_electricitat_bcn.csv.
+14:42:37 - INFO - Response code: 200
+14:42:37 - INFO - Seconds to response: 0.06
+14:42:37 - INFO - Successfully converted response object to a CSV file.
+14:42:37 - INFO - Saving CSV to disk...
+14:42:37 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2023_consum_electricitat_bcn.csv.
+14:42:37 - INFO - 3 of 7 resources collected.
+14:42:37 - INFO - ■■■
+14:42:37 - INFO - Sending a request for 2022_consum_electricitat_bcn.csv.
+14:42:38 - INFO - Response code: 200
+14:42:38 - INFO - Seconds to response: 0.06
+14:42:38 - INFO - Successfully converted response object to a CSV file.
+14:42:38 - INFO - Saving CSV to disk...
+14:42:38 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2022_consum_electricitat_bcn.csv.
+14:42:38 - INFO - 4 of 7 resources collected.
+14:42:38 - INFO - ■■■■
+14:42:38 - INFO - Sending a request for 2021_consum_electricitat_bcn.csv.
+14:42:39 - INFO - Response code: 200
+14:42:39 - INFO - Seconds to response: 0.09
+14:42:39 - INFO - Successfully converted response object to a CSV file.
+14:42:39 - INFO - Saving CSV to disk...
+14:42:39 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2021_consum_electricitat_bcn.csv.
+14:42:39 - INFO - 5 of 7 resources collected.
+14:42:39 - INFO - ■■■■■
+14:42:39 - INFO - Sending a request for 2020_consum_electricitat_bcn.csv.
+14:42:40 - INFO - Response code: 200
+14:42:40 - INFO - Seconds to response: 0.06
+14:42:40 - INFO - Successfully converted response object to a CSV file.
+14:42:40 - INFO - Saving CSV to disk...
+14:42:40 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2020_consum_electricitat_bcn.csv.
+14:42:40 - INFO - 6 of 7 resources collected.
+14:42:40 - INFO - ■■■■■■
+14:42:40 - INFO - Sending a request for 2019_consum_electricitat_bcn.csv.
+14:42:41 - INFO - Response code: 200
+14:42:41 - INFO - Seconds to response: 0.06
+14:42:41 - INFO - Successfully converted response object to a CSV file.
+14:42:41 - INFO - Saving CSV to disk...
+14:42:41 - INFO - Succesfully saved CSV file to ./consum-electricitat-bcn/2019_consum_electricitat_bcn.csv.
+14:42:41 - INFO - 7 of 7 resources collected.
+14:42:41 - INFO - ■■■■■■■
+14:42:41 - INFO - ***************************************************
+14:42:41 - INFO - FINAL REPORT
+14:42:41 - INFO - This pipeline ran for 0:00:08.
+14:42:41 - INFO - A total of 1 package(s) accessed successfully, out of 1 attempted.
+14:42:41 - INFO - A total of 7 resource(s) downloaded and saved successfully, out of 7 attempted.
+14:42:41 - INFO - A total of 0 resources skipped because they were already downloaded.
+14:42:41 - INFO - There were 0 errors.
