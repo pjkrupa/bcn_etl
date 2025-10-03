@@ -4,6 +4,7 @@ from pandas import DataFrame
 from sqlalchemy import create_engine
 from dataclasses import dataclass
 import psycopg2
+from psycopg2 import sql
 
 @dataclass
 class Database:
@@ -12,11 +13,17 @@ class Database:
     db_name: str
 
 def get_file_names(path: str) -> list:
-    return [entry.name for entry in os.scandir() if entry.is_file() and entry.endswith(".csv")]
+    return [entry.name for entry in os.scandir(path) if entry.is_file() and entry.name.endswith(".csv")]
 
 def csv_to_df(path: str, file_name: str):
     my_csv = os.path.join(path, file_name)
     return pd.read_csv(my_csv)
+
+def table_exists(db_config: Database, table_name: str) -> bool:
+    with psycopg2.connect(f"dbname={db_config.db_name} user={db_config.db_user} host={db_config.db_host}") as conn:
+        cur = conn.cursor()
+        cur.execute("SELECT to_regclass(%s);", (table_name,))
+        return cur.fetchone()[0] is not None
 
 def insert_df(
         df: DataFrame, 
@@ -43,7 +50,14 @@ def copy_package_to_db(path: str, package_name: str, db_config: Database):
     RETURNS:
         None
     """
-    with psycopg2.connect("dbname=bcn_data user=peter host=hpmini") as conn:
+    if table_exists(
+        db_config=db_config,
+        table_name=package_name
+        ):
+        print(f"Table {package_name} already exists. For now, to avoid duplication, we are only loading to fresh tables.")
+        return
+    
+    with psycopg2.connect(f"dbname={db_config.db_name} user={db_config.db_user} host={db_config.db_host}") as conn:
         cur = conn.cursor()
         data_dir = os.path.join(path, package_name)
         file_names = get_file_names(data_dir)
@@ -59,6 +73,10 @@ def copy_package_to_db(path: str, package_name: str, db_config: Database):
             ):
 
             for file in file_names:
-                with open(file, "r") as f:
-                    cur.copy_expert(f"COPY {package_name} FROM STDIN WITH CSV HEADER", f)
+                file_path = os.path.join(path, package_name, file)
+                with open(file_path, "r") as f:
+                    copy_sql = sql.SQL("COPY {} FROM STDIN WITH CSV HEADER").format(
+                        sql.Identifier(package_name)
+                        )
+                    cur.copy_expert(copy_sql, f)
         conn.commit()

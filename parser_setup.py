@@ -15,4 +15,9 @@ def get_parser():
         default='.',
         help='Root directory where you want to save the CSV files',
     )
+    parser.add_argument(
+        "--to_db",
+        action="store_true",
+        help="Set this flag if you want to automatically ingest the CSV files into a database after download"
+    )
     return parser
