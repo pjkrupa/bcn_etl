@@ -2,12 +2,19 @@ import argparse
 
 def get_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group(required=True)
+
+    group.add_argument(
         "-p", 
         "--packages",
         nargs='+',
-        required=True, 
         help="Name of the Open Data BCN package listing the resources available."
+        )
+    group.add_argument(
+        "-t", 
+        "--tags",
+        nargs='+',
+        help="Tags to be searched for in the BCN catelog. All packages with a tag will be downloaded."
         )
     parser.add_argument(
         '-d',

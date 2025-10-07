@@ -30,7 +30,7 @@ Then navigate to the `bcn_etl` directory and run the following:
 ```bash
 uv venv
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv sync
 ```
 
 ## Running the script
@@ -42,14 +42,20 @@ To run the script, you need one or more package names from Open Data BCN. You ca
 The syntax for running the script from the `bcn_etl` directory is:
 
 ```bash
-python3 run_pipeline.py -p package-names -d your/download/directory
+python3 run_pipeline.py (-p package-names | -t tags) -d your/download/directory --to_db
 ```
 - The `-p` (or `--packages`) parameter can be one or many package names separated by a space.
+- The `-t` (or `--tags`) parameter allows you to download all BCN packages with certain tags (list of all tags [here](https://opendata-ajuntament.barcelona.cat/data/ca/tags).) The search is inclusive: If a package has at least one tag, it will be downloaded.
 - The `-d` (or `--directory`) parameter is optional: If you leave it off, everything will be saved in the `bcn_etl` directory.
+- The `--to_db` flag is optional. If set, the packages will immediately be saved to the database based on the values in the `.env` file.
 
 So running the script could look like this:
 
 `python3 run_pipeline.py -p pad-dimensions pad_cdo_b_barri-des pad_dom_mdbas_dones -d csv_files`
+
+Or like this:
+
+`python3 run_pipeline.py -t transporte -d csv_files --to_db`
 
 The script creates a directory for each package in `~/bcn_etl/csv_files` and downloads and saves all the package's resources there as CSV files. It skips resources that have been previously downloaded. When the script is finished, if the servers were up and everything worked, it should produce a report at the end that looks like this:
 ```

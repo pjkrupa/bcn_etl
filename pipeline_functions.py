@@ -2,6 +2,7 @@ import logging, requests, time, os
 from typing import Optional
 from data_functions import download_resource, request_resource_library, token_required, process_resource_library, convert_to_csv, save_csv
 from reporting import Report
+import pandas as pd
 
 def persistant_request(
         logger: logging.Logger,
@@ -176,7 +177,7 @@ def get_resource(
 
     
     csv = convert_to_csv(logger, response)
-    saved = save_csv(logger, resource, csv, path=storage_root)
+    saved = save_csv(logger, resource, csv, path=storage_root) if csv else False
 
     if saved:
         logger.info(f"{len(report.resources_success)} of {report.num_resources} resources collected.")
@@ -184,4 +185,20 @@ def get_resource(
     else:
         logger.error(f"Could not save {resource['name']} to disk.")
         report.num_errors += 1
-                 
+
+def get_packages(tags: list[str]) -> list[str]:
+    """
+    Returns a list of all packages with the submitted tags.
+    """
+    df = pd.read_csv("catalog_tags.csv")
+    packages = []
+    for tag in tags:
+        result = df.loc[
+            df['tags_list'].apply(
+                lambda x: isinstance(x, str) and tag.lower() in [t.strip().lower() for t in x.split(',')]
+                ),
+                'name'
+        ]
+        packages.extend(result.to_list())
+    packages = list(set(packages))
+    return packages

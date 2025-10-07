@@ -2,8 +2,15 @@ import time
 from datetime import timedelta
 from logging_setup import get_logger
 from parser_setup import get_parser
-from data_functions import request_resource_library, process_resource_library, download_resource, convert_to_csv, save_csv, to_df, token_required
-from pipeline_functions import persistant_request, main_pipeline
+from data_functions import (
+    request_resource_library, 
+    process_resource_library, 
+    download_resource, 
+    convert_to_csv, 
+    save_csv, to_df, 
+    token_required,
+    )
+from pipeline_functions import main_pipeline, get_packages
 from reporting import compile_reports
 from db_load import Database
 import os
@@ -28,51 +35,55 @@ db_config = Database(
 )
 
 
-
-
 parser = get_parser()
 args = parser.parse_args()
-package_list = args.packages
+if args.packages:
+    package_list = args.packages
+else:
+    package_list = get_packages(args.tags)
 storage_root = args.directory
-print(package_list)
 
 
 if __name__ == "__main__":
     logger = get_logger()
     start_time = time.time()
     report_list = []
-    for package in package_list:
-        report = main_pipeline(logger, package, storage_root=storage_root)
-        report_list.append(report)
-    
-    end_time = time.time()
+    if not package_list:
+        logger.info(f"No packages found with those tags, exiting...")
+    else:
+        logger.info(f"Getting the following packages: {package_list}")
+        for package in package_list:
+            report = main_pipeline(logger, package, storage_root=storage_root)
+            report_list.append(report)
+        
+        end_time = time.time()
 
-    total_duration = end_time - start_time
-    final_duration = str(timedelta(seconds=round(total_duration)))
+        total_duration = end_time - start_time
+        final_duration = str(timedelta(seconds=round(total_duration)))
 
-    final_report = compile_reports(report_list)
+        final_report = compile_reports(report_list)
 
-    total_packages = len(final_report['packages_success']) + len(final_report['packages_fail'])
-    total_resources = len(final_report['resources_success']) + len(final_report['resources_fail'])
+        total_packages = len(final_report['packages_success']) + len(final_report['packages_fail'])
+        total_resources = len(final_report['resources_success']) + len(final_report['resources_fail'])
 
-    logger.info("***************************************************")
-    logger.info("FINAL REPORT")
-    logger.info(f"This pipeline ran for {final_duration}.")
-    logger.info(f"A total of {len(final_report['packages_success'])} package(s) accessed successfully, out of {total_packages} attempted.")
-    logger.info(f"A total of {len(final_report['resources_success'])} resource(s) downloaded and saved successfully, out of {total_resources} attempted.")
-    logger.info(f"A total of {final_report['skipped']} resources skipped because they were already downloaded.")
-    logger.info(f"There were {final_report['num_errors']} errors.")
-    if final_report['packages_fail']:
-        logger.info(f"The following package(s) could not be accessed:")
-        for package in final_report['packages_fail']:
-            logger.info(f"{package}")
-        logger.info(f"Check the logs for more information.")
+        logger.info("***************************************************")
+        logger.info("FINAL REPORT")
+        logger.info(f"This pipeline ran for {final_duration}.")
+        logger.info(f"A total of {len(final_report['packages_success'])} package(s) accessed successfully, out of {total_packages} attempted.")
+        logger.info(f"A total of {len(final_report['resources_success'])} resource(s) downloaded and saved successfully, out of {total_resources} attempted.")
+        logger.info(f"A total of {final_report['skipped']} resources skipped because they were already downloaded.")
+        logger.info(f"There were {final_report['num_errors']} errors.")
+        if final_report['packages_fail']:
+            logger.info(f"The following package(s) could not be accessed:")
+            for package in final_report['packages_fail']:
+                logger.info(f"{package}")
+            logger.info(f"Check the logs for more information.")
 
-    if final_report['resources_fail']:
-        logger.info(f"The following resource(s) could not be accessed:")
-        for resource in final_report['resources_fail']:
-            logger.info(f"{resource['name']}")
-        logger.info(f"Check the logs for more information.")
+        if final_report['resources_fail']:
+            logger.info(f"The following resource(s) could not be accessed:")
+            for resource in final_report['resources_fail']:
+                logger.info(f"{resource['name']}")
+            logger.info(f"Check the logs for more information.")
 
 
 

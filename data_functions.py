@@ -122,7 +122,13 @@ def convert_to_csv(
     Converts a response.Requests object to a CSV StringIO object.
     """
     try:
-        csv_data = StringIO(response.content.decode('utf-8'))
+        try:
+            decoded = response.content.decode("utf-8")
+        except UnicodeDecodeError:
+            logger.warning("UTF-8 decoding failed, retrying with UTF-16.")
+            decoded = response.content.decode('utf-16')
+
+        csv_data = StringIO(decoded)
         reader = csv.reader(csv_data)
 
         #simple check to see if the file is actually a CSV. if not, it throws an error.
@@ -130,10 +136,6 @@ def convert_to_csv(
         
         logger.info(f"Successfully converted response object to a CSV file.")
         return csv_data
-    
-    except UnicodeDecodeError as e:
-        logger.exception(f"Failed to decode response content as UTF-8: {e}")
-        return None 
 
     except csv.Error as e:
         logger.excption(f"Response content is not valid CSV format: {e}")
